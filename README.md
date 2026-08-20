@@ -1,0 +1,29 @@
+# GC Digital Initiatives — Orientation 2026
+
+Slide deck for the GCDI Orientation: August 25, 2026, 11:30–12:00, Proshansky Auditorium.
+
+A single-page HTML deck (no build step) following the CUNY AI Lab slide framework
+(`src/slides.js` — keyboard, swipe, scrubber, fragments, overview, lightbox) with a
+GCDI aesthetic: white slides, dark grey text, orange accents from the GCDI logo.
+
+- **View locally:** `python3 -m http.server` in this folder, then open `http://localhost:8000`
+- **Published deck:** https://cuny-ai-lab.github.io/GCDI-Orientation/
+- **Source repository:** https://github.com/CUNY-AI-Lab/GCDI-Orientation
+
+## Structure
+
+27 slides following the 2026 orientation outline: Introduction → Degree Programs →
+Support for Digital Scholarship (GC Digital Scholarship Lab · CUNY AI Lab · AI
+Guidelines) → Platforms (Commons · Manifold) → Grants (PDIG) → Labs & Spaces → Close.
+
+Content and screenshots carry over from the 2025 orientation deck; the CUNY AI Lab
+section has a dedicated presenter break followed by 3 content slides drawn from the
+Fall 2026 front/back flyer, with the Sandbox walkthrough adapted from the ACH 2026
+deck. Slide and text-panel scrolling are disabled; dense text automatically scales
+to remain inside the available presentation viewport.
+
+## Controls
+
+Space/→ advance (fragments first), ← back, Esc overview, F fullscreen, B blank screen,
+click any screenshot to zoom. The title background is an adaptation of "Slip Planes"
+(K. Moonshot, creative-clawing.com) — move the pointer across it to shear the lattice.

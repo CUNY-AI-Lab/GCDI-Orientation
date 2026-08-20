@@ -166,8 +166,9 @@ section.slide.slide-title { padding: 0; }
 .presenter-slide .content { align-items: center; padding-block: clamp(20px, 3vh, 34px); }
 .presenter-slide .content > * { width: min(100%, 1120px); }
 .presenter-slide .content h1 { font-size: clamp(32px, 4vw, 62px); margin-bottom: clamp(12px, 1.8vh, 20px); }
-.presenter-list { display: grid; gap: clamp(5px, 0.9vh, 9px); padding: 0; margin: 0; list-style: none; }
-.presenter-row { display: grid; grid-template-columns: minmax(200px, 0.72fr) minmax(0, 1.72fr); gap: clamp(14px, 2vw, 30px); align-items: baseline; padding: clamp(6px, 0.9vh, 10px) clamp(12px, 1.5vw, 20px); border-left: 3px solid rgba(var(--accent-rgb), 0.72); border-radius: 4px 10px 10px 4px; background: linear-gradient(90deg, rgba(var(--accent-rgb), 0.07), rgba(var(--accent-rgb), 0)); font-size: clamp(15px, 1.42vw, 21px); line-height: 1.2; }
+.presenter-list { display: grid; gap: clamp(7px, 1.1vh, 11px); padding: 0; margin: 0; list-style: none; }
+.presenter-row { display: grid; grid-template-columns: minmax(180px, 0.54fr) minmax(0, 1.9fr); gap: clamp(10px, 1.2vw, 18px); align-items: baseline; padding: clamp(8px, 1.15vh, 12px) clamp(12px, 1.5vw, 20px); border-left: 3px solid rgba(var(--accent-rgb), 0.72); border-radius: 4px 10px 10px 4px; background: linear-gradient(90deg, rgba(var(--accent-rgb), 0.07), rgba(var(--accent-rgb), 0)); line-height: 1.2; }
+.presenter-slide .presenter-row { font-size: clamp(12px, 1vw, 15px); }
 .presenter-row strong { color: var(--fg-strong); font-weight: 700; }
 .presenter-row span { color: var(--fg); }
 .presenter-row:nth-child(1) { transform: translateX(-3.5%); }
@@ -178,6 +179,11 @@ section.slide.slide-title { padding: 0; }
 .presenter-row:nth-child(6) { transform: translateX(2.5%); }
 .presenter-row:nth-child(7) { transform: translateX(-1%); }
 .presenter-row:nth-child(8) { transform: translateX(1.75%); }
+
+@media (min-width: 960px) {
+  .presenter-row strong,
+  .presenter-row span { white-space: nowrap; }
+}
 
 /* ── Section break slides ── */
 .slide-break .content { justify-content: center; min-height: calc(100vh - var(--header-h) - var(--footer-h) - 60px); }

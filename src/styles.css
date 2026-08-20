@@ -196,6 +196,7 @@ section.slide.slide-title { padding: 0; }
 .series-head strong { font-size: var(--fs-schedule); font-weight: 700; letter-spacing: 0.01em; white-space: nowrap; }
 .series-head span { font-size: var(--fs-caption); color: rgba(255,255,255,0.82); white-space: nowrap; }
 .placeholder-slide[data-slide="cail-workshops"] .schedule li { font-size: clamp(16px, 1.4vw, 23px); }
+.placeholder-slide[data-slide="cail-workshops"] .qr-row img { width: clamp(148px, 14vw, 216px); }
 .qr-row { display: flex; align-items: center; gap: 16px; margin-top: 18px; }
 .qr-row img { width: clamp(74px, 7vw, 108px); height: auto; border: 1px solid var(--stroke); border-radius: 8px; }
 .qr-row p { font-size: var(--fs-body-compact); line-height: 1.4; }

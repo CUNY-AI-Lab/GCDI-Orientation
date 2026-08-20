@@ -23,7 +23,7 @@
   --accent-rgb: 194, 65, 12;
   /* Type scale — ample sizes for auditorium legibility. */
   --fs-display:      clamp(34px, 3.8vw, 64px);
-  --fs-title:        clamp(38px, 5.4vw, 104px);
+  --fs-title:        clamp(34px, 4.8vw, 82px);
   --fs-heading:      clamp(26px, 2.9vw, 46px);
   --fs-subhead:      clamp(22px, 2vw, 32px);
   --fs-body:         clamp(24px, 2.4vw, 40px);
@@ -155,6 +155,7 @@ section.slide.slide-title { padding: 0; }
 .title-card { max-width: 980px; text-align: center; background: rgba(9, 11, 12, 0.72); border: 1px solid rgba(255,255,255,0.16); border-radius: 18px; padding: clamp(28px, 4.5vw, 58px) clamp(24px, 5vw, 64px); backdrop-filter: blur(6px); pointer-events: auto; }
 .title-card .eyebrow { font-family: var(--font-mono); font-size: clamp(13px, 1.3vw, 19px); letter-spacing: 0.16em; text-transform: uppercase; color: #f0b98d; margin-bottom: 18px; }
 .title-card h1 { font-size: var(--fs-title); font-weight: 700; line-height: 1.05; letter-spacing: -0.015em; color: #ffffff; margin-bottom: 16px; text-wrap: balance; }
+.title-card .title-line { display: block; white-space: nowrap; }
 .title-card .panelists { font-size: clamp(17px, 1.6vw, 25px); line-height: 1.5; color: rgba(255,255,255,0.92); }
 .title-card .institution { font-size: clamp(15px, 1.4vw, 22px); color: rgba(255,255,255,0.75); margin-top: 12px; }
 .title-card .title-link { display: inline-block; margin-top: 18px; font-family: var(--font-mono); font-size: clamp(14px, 1.3vw, 20px); letter-spacing: 0.1em; color: #f0b98d; text-decoration: none; border: 1px solid rgba(240,185,141,0.45); border-radius: 999px; padding: 8px 18px; }
@@ -230,7 +231,7 @@ section.slide.slide-title { padding: 0; }
   section.slide:not(.slide-title) .content { flex: 1 1 48%; min-height: 0; }
   section.slide:not(.slide-title) .stage { flex: 1 1 52%; min-height: 0; }
   .placeholder-slide.crowded .stage { display: none; }
-  .title-card h1 { font-size: clamp(30px, 8vw, 44px); }
+  .title-card h1 { font-size: clamp(26px, 7vw, 40px); }
   .walk-stage > .walk-panel { padding: 8px; }
   .walk-panel > div { min-width: 0; }
   .walk-panel .series-head { gap: 6px; margin-top: 0; padding: 6px 8px; }
@@ -240,7 +241,7 @@ section.slide.slide-title { padding: 0; }
 }
 @media (max-width: 480px) {
   .header-wordmark { display: none; }
-  .footer-meta .kbd, .footer-meta .footer-deck-link { display: none; }
+  .footer-meta .kbd { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }

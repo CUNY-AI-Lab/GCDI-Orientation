@@ -214,6 +214,10 @@ section.slide.slide-title { padding: 0; }
 .series-head span { font-size: var(--fs-caption); color: rgba(255,255,255,0.82); white-space: nowrap; }
 .placeholder-slide[data-slide="cail-workshops"] .schedule li { font-size: clamp(16px, 1.4vw, 23px); }
 .placeholder-slide[data-slide="cail-workshops"] .qr-row img { width: clamp(148px, 14vw, 216px); }
+.df-workshop-schedule { margin-top: clamp(8px, 1.4vh, 16px); }
+.df-workshop-schedule li { grid-template-columns: minmax(330px, 1.2fr) minmax(0, 1.5fr); gap: clamp(18px, 3vw, 46px); align-items: center; padding-block: clamp(14px, 2vh, 22px); }
+.df-workshop-schedule li > strong { color: var(--accent-deep); font-size: clamp(18px, 1.8vw, 26px); white-space: nowrap; }
+.df-workshop-schedule li > span { font-size: var(--fs-body-compact); white-space: nowrap; }
 .qr-row { display: flex; align-items: center; gap: 16px; margin-top: 18px; }
 .qr-row img { width: clamp(74px, 7vw, 108px); height: auto; border: 1px solid var(--stroke); border-radius: 8px; }
 .qr-row p { font-size: var(--fs-body-compact); line-height: 1.4; }
@@ -253,6 +257,9 @@ section.slide.slide-title { padding: 0; }
   .presenter-row { grid-template-columns: 1fr; gap: 2px; }
   .presenter-row:nth-child(odd) { transform: translateX(-1.5%); }
   .presenter-row:nth-child(even) { transform: translateX(1.5%); }
+  .df-workshop-schedule li { grid-template-columns: 1fr; gap: 3px; }
+  .df-workshop-schedule li > strong,
+  .df-workshop-schedule li > span { white-space: normal; }
   .walk-stage > .walk-panel { padding: 8px; }
   .walk-panel > div { min-width: 0; }
   .walk-panel .series-head { gap: 6px; margin-top: 0; padding: 6px 8px; }

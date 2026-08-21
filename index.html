@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="src/styles.css?v=20260821-offer3" />
+  <link rel="stylesheet" href="src/styles.css?v=20260821-qrcenter2" />
 </head>
 <body>
 <div id="image-lightbox" class="lightbox" aria-hidden="true">
@@ -27,8 +27,7 @@
     <img src="images/gcdi-logo.png" alt="" aria-hidden="true" class="header-logo">
     <span class="header-wordmark">GC Digital Initiatives</span>
   </a>
-  <div class="bar"><div class="kbd" id="kbdSwipe">Swipe</div></div>
-  <a href="https://cuny.is/gcdi" target="_blank" rel="noopener" class="header-deck-link">cuny.is/gcdi</a>
+  <a href="https://cuny.is/gcdi" target="_blank" rel="noopener" class="header-deck-link" id="deckLink">cuny.is/gcdi</a>
 </header>
 
 <main id="slide-content" role="main" aria-label="Presentation slides">
@@ -42,9 +41,8 @@
       <div class="title-overlay">
         <div class="title-card">
           <img class="title-logo" src="images/gcdi-logo.png" alt="GC Digital Initiatives logo">
-          <div class="eyebrow">GCDI Orientation · August 25, 2026 · 11:30–12:00 · Proshansky Auditorium</div>
+          <div class="eyebrow">GCDI Orientation · August 25, 2026</div>
           <h1><span class="title-line">CUNY Graduate Center</span><span class="title-line">Digital Initiatives</span></h1>
-          <p class="panelists">Digital scholarship, training, platforms, grants, and spaces at the Graduate Center</p>
           <p class="institution">The Graduate Center, City University of New York</p>
           <a class="title-link" href="https://cuny.is/gcdi" target="_blank" rel="noopener">cuny.is/gcdi</a>
         </div>
@@ -60,7 +58,7 @@
         <li class="presenter-row"><strong>Matthew K. Gold</strong><span>Advisor to the Provost for Digital Initiatives and Associate Professor of English and Digital Humanities</span></li>
         <li class="presenter-row"><strong>Lisa Rhody</strong><span>Deputy Director of Digital Initiatives</span></li>
         <li class="presenter-row"><strong>Meha Gupta</strong><span>GC Digital Fellow and Ph.D. Student in English</span></li>
-        <li class="presenter-row"><strong>Stefano Morello</strong><span>Director, American Social History Project/Center for Media and Learning, New Media Lab</span></li>
+        <li class="presenter-row"><strong>Stefano Morello</strong><span>Director, American Social History Project/Center for Media and Learning</span></li>
         <li class="presenter-row"><strong>Stephen Zweibel</strong><span>Digital Scholarship Librarian</span></li>
         <li class="presenter-row"><strong>Zach Muhlbauer</strong><span>MA in Digital Humanities Advising Fellow and Technical Lead, Critical AI Literacy Institute</span></li>
         <li class="presenter-row"><strong>Luke Waltzer</strong><span>Director, Teaching and Learning Center</span></li>
@@ -191,7 +189,7 @@
     </figure>
   </section>
 
-  <section class="slide placeholder-slide crowded dense" data-slide="dsl-workshops" aria-label="GC Digital Fellows Workshops">
+  <section class="slide placeholder-slide crowded dense" data-slide="dsl-workshops" data-link="https://cuny.is/gcdiworkshops" aria-label="GC Digital Fellows Workshops">
     <div class="content">
       <div class="label">GC Digital Scholarship Lab</div>
       <h1>GC Digital Fellows’ Workshops</h1>
@@ -201,12 +199,11 @@
         <li><strong>Introduction to R</strong><span>Thursday, September 24 · 4–5:30 PM · Room 7414</span></li>
         <li><strong>Introduction to GIS</strong><span>Information forthcoming</span></li>
       </ul>
-      <p class="link-line"><a href="https://cuny.is/gcdiworkshops" target="_blank" rel="noopener">cuny.is/gcdiworkshops</a></p>
     </div>
     <figure class="stage blank-stage" aria-hidden="true"></figure>
   </section>
 
-  <section class="slide placeholder-slide figure-side" data-slide="dsl-dri" aria-label="Digital Research Institute">
+  <section class="slide placeholder-slide figure-side" data-slide="dsl-dri" data-link="https://cuny.is/gcdri" aria-label="Digital Research Institute">
     <div class="content">
       <div class="label">GC Digital Scholarship Lab</div>
       <h1>Digital Research Institute</h1>
@@ -214,7 +211,6 @@
         <li>An intensive, multi-day introduction to digital research methods each January</li>
         <li>Command line, Git, Python, R, mapping, text analysis, and more — no experience required</li>
       </ul>
-      <p class="link-line"><a href="https://cuny.is/gcdri" target="_blank" rel="noopener">cuny.is/gcdri</a></p>
     </div>
     <figure class="stage figure-stage">
       <img src="images/dri-site.png" alt="GC Digital Research Institute website: participants work together at a long table full of laptops">
@@ -240,7 +236,7 @@
     </figure>
   </section>
 
-  <section class="slide placeholder-slide figure-side" data-slide="dsl-hours" aria-label="Office Hours and Consultations">
+  <section class="slide placeholder-slide figure-side" data-slide="dsl-hours" data-link="https://cuny.is/gcdfconsults" aria-label="Office Hours and Consultations">
     <div class="content">
       <div class="label">GC Digital Scholarship Lab</div>
       <h1>Office Hours &amp; Consultations</h1>
@@ -248,7 +244,6 @@
         <li>Drop-in office hours in the Digital Scholarship Lab — no registration required</li>
         <li>One-on-one consultations with a Digital Fellow, on your schedule</li>
       </ul>
-      <p class="link-line"><a href="https://cuny.is/gcdfconsults" target="_blank" rel="noopener">cuny.is/gcdfconsults</a></p>
     </div>
     <figure class="stage pair-stage" aria-label="Office hours and student consultation flyers">
       <img src="images/office-hours.jpg" alt="GC Digital Initiatives Office Hours flyer: the Digital Fellows hold office hours to support student and faculty projects at the Digital Scholarship Lab, Room 7414">
@@ -257,7 +252,7 @@
   </section>
 
   <!-- ========================= CUNY AI LAB ========================= -->
-  <section class="slide placeholder-slide crowded" data-slide="cail-intro" aria-label="CUNY AI Lab: AI Infrastructure for CUNY, by CUNY">
+  <section class="slide placeholder-slide crowded" data-slide="cail-intro" data-link="https://cuny.is/cail" aria-label="CUNY AI Lab: AI Infrastructure for CUNY, by CUNY">
     <div class="content">
       <div class="label">CUNY AI Lab</div>
       <div class="cail-logo-row">
@@ -293,10 +288,10 @@
     <figure class="stage blank-stage" aria-hidden="true"></figure>
   </section>
 
-  <section class="slide placeholder-slide crowded" data-slide="cail-offer" aria-label="CUNY AI Lab: What We Offer">
+  <section class="slide placeholder-slide crowded" data-slide="cail-offer" data-link="https://cuny.is/cail" aria-label="CUNY AI Lab: What CAIL Offers">
     <div class="content">
       <div class="label">CUNY AI Lab</div>
-      <h1>What We Offer</h1>
+      <h1>What CAIL Offers</h1>
       <div class="offer-grid">
         <div class="offer-card frag">
           <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
@@ -332,7 +327,7 @@
     <figure class="stage blank-stage" aria-hidden="true"></figure>
   </section>
 
-  <section class="slide placeholder-slide figure-side" data-slide="cail-sandbox" aria-label="CUNY AI Lab Sandbox">
+  <section class="slide placeholder-slide figure-side" data-slide="cail-sandbox" data-link="https://chat.ailab.gc.cuny.edu" aria-label="CUNY AI Lab Sandbox">
     <div class="content">
       <div class="label">CUNY AI Lab</div>
       <h1>CUNY AI Lab Sandbox</h1>
@@ -341,7 +336,6 @@
         <li>Open-weight models curated for the CUNY community</li>
         <li>Configure custom models for research and classroom use</li>
       </ul>
-      <p class="link-line"><a href="https://chat.ailab.gc.cuny.edu" target="_blank" rel="noopener">chat.ailab.gc.cuny.edu</a></p>
     </div>
     <figure class="stage walk-stage" aria-label="Signing in to the Sandbox, step by step, ending with the fall workshop series">
       <img class="walk-step" src="images/sandbox-step1.png?v=20260820" alt="Step 1: signing in to the CUNY AI Lab Sandbox">
@@ -360,7 +354,7 @@
     </figure>
   </section>
 
-  <section class="slide placeholder-slide crowded" data-slide="cail-workshops" aria-label="CUNY AI Lab: Vibe Coding Series and Co-Working Sessions">
+  <section class="slide placeholder-slide crowded" data-slide="cail-workshops" data-link="https://ailab.gc.cuny.edu/events" aria-label="CUNY AI Lab: Vibe Coding Series and Co-Working Sessions">
     <div class="content">
       <div class="label">CUNY AI Lab · Fall 2026</div>
       <h1>Vibe Coding Series &amp; Co-Working Sessions</h1>
@@ -384,7 +378,7 @@
       </div>
       <div class="qr-row">
         <img src="images/cail-qr.png" alt="QR code linking to CUNY AI Lab events and registration">
-        <p>All sessions at the New Media Lab (Room 7388.01), CUNY Graduate Center<br>
+        <p>All sessions at the New Media Lab (Room 7388.01)<br>
         Details &amp; registration: <a href="https://ailab.gc.cuny.edu/events" target="_blank" rel="noopener">ailab.gc.cuny.edu/events</a></p>
       </div>
     </div>
@@ -392,7 +386,7 @@
   </section>
 
   <!-- ========================= AI GUIDELINES ========================= -->
-  <section class="slide placeholder-slide odd-layout" data-slide="ai-guidelines" aria-label="CUNY Graduate Center AI Guidelines">
+  <section class="slide placeholder-slide odd-layout" data-slide="ai-guidelines" data-link="https://www.gc.cuny.edu/research-faculty/research-graduate-center/ai-graduate-center/cuny-graduate-center-ai-guidelines" data-link-label="gc.cuny.edu" aria-label="CUNY Graduate Center AI Guidelines">
     <div class="content">
       <div class="label">AI Guidelines</div>
       <h1>CUNY Graduate Center AI Guidelines</h1>
@@ -423,7 +417,7 @@
     <figure class="stage blank-stage" aria-hidden="true"></figure>
   </section>
 
-  <section class="slide placeholder-slide figure-side" data-slide="commons" aria-label="CUNY Academic Commons">
+  <section class="slide placeholder-slide figure-side" data-slide="commons" data-link="https://commons.gc.cuny.edu" aria-label="CUNY Academic Commons">
     <div class="content">
       <div class="label">Platforms</div>
       <h1>CUNY Academic Commons</h1>
@@ -432,14 +426,13 @@
         <li>Use it for connection — groups, sites, profiles, and events across CUNY</li>
         <li>Use it for teaching — course sites, student writing, and portfolios</li>
       </ul>
-      <p class="link-line"><a href="https://commons.gc.cuny.edu" target="_blank" rel="noopener">commons.gc.cuny.edu</a></p>
     </div>
     <figure class="stage figure-stage">
       <img src="images/commons.png" alt="CUNY Academic Commons homepage: we help people at CUNY connect, learn, teach, and more — create a group, create a site, or create a connected group and site">
     </figure>
   </section>
 
-  <section class="slide placeholder-slide figure-side" data-slide="manifold" aria-label="Manifold at CUNY">
+  <section class="slide placeholder-slide figure-side" data-slide="manifold" data-link="https://cuny.manifoldapp.org" aria-label="Manifold at CUNY">
     <div class="content">
       <div class="label">Platforms</div>
       <h1>Manifold @CUNY</h1>
@@ -448,14 +441,13 @@
         <li>Iterative texts, powerful annotation tools, rich media, and reading groups</li>
         <li>Free for the entire CUNY community</li>
       </ul>
-      <p class="link-line"><a href="https://cuny.manifoldapp.org" target="_blank" rel="noopener">cuny.manifoldapp.org</a></p>
     </div>
     <figure class="stage figure-stage">
       <img src="images/manifold-cuny.png" alt="Welcome to Manifold at CUNY: an intuitive, collaborative, open-source platform for digital publishing">
     </figure>
   </section>
 
-  <section class="slide placeholder-slide figure-side" data-slide="manifold-oer" aria-label="Open Education Projects and Workshops on Manifold">
+  <section class="slide placeholder-slide figure-side" data-slide="manifold-oer" data-link="https://cuny.manifoldapp.org" aria-label="Open Education Projects and Workshops on Manifold">
     <div class="content">
       <div class="label">Platforms</div>
       <h1>Open Education Projects &amp; Workshops</h1>
@@ -471,7 +463,7 @@
   </section>
 
   <!-- ======================== GRANTS ======================== -->
-  <section class="slide placeholder-slide figure-side" data-slide="grants" aria-label="Grants for Digital Scholarship: Provost's Digital Innovation Grants">
+  <section class="slide placeholder-slide figure-side" data-slide="grants" data-link="https://cuny.is/pdig" aria-label="Grants for Digital Scholarship: Provost's Digital Innovation Grants">
     <div class="content">
       <div class="label">Grants</div>
       <h1>Provost's Digital Innovation Grants</h1>
@@ -480,14 +472,13 @@
         <li>Annual call for applications each fall</li>
         <li>An archive of funded projects to explore online</li>
       </ul>
-      <p class="link-line"><a href="https://cuny.is/pdig" target="_blank" rel="noopener">cuny.is/pdig</a></p>
     </div>
     <figure class="stage figure-stage">
       <img src="images/pdig.png" alt="Provost's Digital Innovation Grants website: the program supports innovative digital projects by matriculated doctoral students at the CUNY Graduate Center">
     </figure>
   </section>
 
-  <section class="slide placeholder-slide figure-side" data-slide="grants-samples" aria-label="Sample PDIG projects">
+  <section class="slide placeholder-slide figure-side" data-slide="grants-samples" data-link="https://cuny.is/pdig" aria-label="Sample PDIG projects">
     <div class="content">
       <div class="label">Grants</div>
       <h1>Sample PDIG Projects</h1>
@@ -520,7 +511,7 @@
     <figure class="stage blank-stage" aria-hidden="true"></figure>
   </section>
 
-  <section class="slide placeholder-slide odd-layout" data-slide="nml" aria-label="New Media Lab">
+  <section class="slide placeholder-slide odd-layout" data-slide="nml" data-link="https://newmedialab.cuny.edu" aria-label="New Media Lab">
     <div class="content">
       <div class="label">Labs &amp; Spaces</div>
       <h1>New Media Lab</h1>
@@ -537,7 +528,7 @@
     </figure>
   </section>
 
-  <section class="slide placeholder-slide crowded roomy" data-slide="gcdi-fifth-floor" aria-label="Graduate Center Digital Initiatives on the fifth floor">
+  <section class="slide placeholder-slide crowded roomy" data-slide="gcdi-fifth-floor" data-link="https://gcdi.commons.gc.cuny.edu" aria-label="Graduate Center Digital Initiatives on the fifth floor">
     <div class="content">
       <div class="label">Labs &amp; Spaces</div>
       <h1>GCDI on the Fifth Floor</h1>
@@ -546,7 +537,6 @@
         <li>Data Lab: an informal, interdisciplinary space to discuss all things data</li>
         <li>Drop-in hours, workshops, consultations, and user groups</li>
       </ul>
-      <p class="link-line"><a href="https://gcdi.commons.gc.cuny.edu/" target="_blank" rel="noopener">gcdi.commons.gc.cuny.edu</a></p>
     </div>
     <figure class="stage blank-stage" aria-hidden="true"></figure>
   </section>
@@ -588,7 +578,7 @@
   </div>
 </footer>
 
-<script src="src/slides.js?v=20260820-title2"></script>
+<script src="src/slides.js?v=20260821-deeplinks"></script>
 <script>
 (function () {
   // Title background adapted from "Slip Planes" (K. Moonshot, Creative Clawing):

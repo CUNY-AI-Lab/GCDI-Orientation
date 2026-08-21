@@ -11,6 +11,8 @@ const lightboxImage = document.getElementById('lightbox-image');
 const lightboxCaption = document.getElementById('lightbox-caption');
 const lightboxClose = document.getElementById('lightbox-close');
 const announcer = document.getElementById('slide-announcer');
+const deckLink = document.getElementById('deckLink');
+const deckLinkDefault = deckLink ? deckLink.getAttribute('href') : '';
 const leafletMaps = window.__deckLeafletMaps || (window.__deckLeafletMaps = []);
 let announceTimer = null;
 let fitFrame = null;
@@ -89,6 +91,13 @@ function show(i, revealAll) {
   if (sliderThumb) sliderThumb.style.left = 'calc(' + progress + '% - 10px)';
 
   history.replaceState(null, '', '#' + (idx + 1));
+
+  if (deckLink) {
+    var link = slides[idx].getAttribute('data-link') || deckLinkDefault;
+    deckLink.setAttribute('href', link);
+    deckLink.textContent = slides[idx].getAttribute('data-link-label') ||
+      link.replace(/^https?:\/\//, '').replace(/\/$/, '');
+  }
 
   var f = slides[idx].querySelector('.content');
   if (f) f.scrollTop = 0;

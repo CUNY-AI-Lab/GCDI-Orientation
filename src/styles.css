@@ -201,6 +201,7 @@ section.slide.slide-title { padding: 0; }
 /* ── CUNY AI Lab slides ── */
 .cail-logo-row { display: flex; align-items: center; gap: 18px; margin-bottom: 16px; flex-wrap: wrap; }
 .cail-logo-row img { height: clamp(44px, 5vw, 68px); width: auto; }
+.cail-logo-row .kale { height: clamp(52px, 6vw, 84px); transform: rotate(-8deg); margin-left: -4px; }
 .principle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: clamp(10px, 1.4vw, 18px); margin-top: 6px; }
 .offer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: clamp(12px, 1.6vw, 22px); margin-top: clamp(12px, 2.4vh, 30px); flex: 1 1 auto; min-height: 0; max-height: min(62vh, 520px); }
 .offer-card { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: clamp(12px, 2.4vh, 26px); text-align: center; border: 1.5px solid rgba(var(--accent-rgb), 0.35); border-radius: 14px; background: linear-gradient(180deg, #fff 0%, rgba(var(--accent-rgb), 0.05) 100%); padding: clamp(18px, 3vh, 40px) clamp(14px, 1.6vw, 22px); }
@@ -209,6 +210,18 @@ section.slide.slide-title { padding: 0; }
 .principle-card { border: 1.5px solid rgba(var(--accent-rgb), 0.35); border-radius: 12px; padding: clamp(12px, 1.6vw, 20px) clamp(14px, 1.8vw, 22px); background: #fff; }
 .principle-card strong { display: block; color: var(--accent-deep); font-size: var(--fs-body-compact); font-weight: 700; margin-bottom: 4px; }
 .principle-card span { font-size: var(--fs-body-compact); color: var(--fg); line-height: 1.35; }
+.cail-summary { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: clamp(18px, 2.6vw, 44px); align-items: stretch; flex: 1 1 auto; min-height: 0; max-height: min(62vh, 520px); margin-top: clamp(10px, 2vh, 24px); }
+.cail-summary .offer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 0; max-height: none; }
+.cail-summary .offer-card { gap: clamp(8px, 1.6vh, 18px); padding: clamp(12px, 2vh, 26px) clamp(10px, 1.2vw, 18px); }
+.cail-summary .offer-icon { width: clamp(30px, 5vh, 60px); }
+.cail-summary .offer-card strong { font-size: var(--fs-subhead); }
+.commitment-col { display: flex; flex-direction: column; justify-content: center; min-width: 0; }
+.commitment-col .units-caption { text-align: left; margin-top: 0; margin-bottom: clamp(8px, 1.4vh, 16px); }
+.commitment-list { list-style: none; padding: 0; margin: 0; max-width: none !important; }
+.commitment-list li { display: block; font-size: var(--fs-body-compact); line-height: 1.32; padding: clamp(7px, 1.3vh, 14px) 0; border-bottom: 1px solid var(--rule); margin: 0; }
+.commitment-list li:last-child { border-bottom: none; }
+.commitment-list strong { display: block; color: var(--accent-deep); font-weight: 700; }
+.commitment-list span { color: var(--fg); }
 .unit-row { display: flex; align-items: stretch; justify-content: center; gap: clamp(10px, 1.3vw, 16px); margin-top: 18px; flex-wrap: wrap; }
 .unit-chip { display: flex; align-items: center; justify-content: center; border-radius: 10px; padding: 12px 20px; min-height: 78px; border: 1px solid var(--stroke); background: #fff; }
 .unit-chip img { height: clamp(42px, 4.8vw, 64px); width: auto; max-width: 210px; object-fit: contain; }

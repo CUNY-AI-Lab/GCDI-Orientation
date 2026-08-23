@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="src/styles.css?v=20260821-qrcenter2" />
+  <link rel="stylesheet" href="src/styles.css?v=20260823-merge" />
 </head>
 <body>
 <div id="image-lightbox" class="lightbox" aria-hidden="true">
@@ -254,29 +254,12 @@
   <!-- ========================= CUNY AI LAB ========================= -->
   <section class="slide placeholder-slide crowded" data-slide="cail-intro" data-link="https://cuny.is/cail" aria-label="CUNY AI Lab: AI Infrastructure for CUNY, by CUNY">
     <div class="content">
-      <div class="label">CUNY AI Lab</div>
+      <div class="label">CUNY AI Lab (CAIL)</div>
       <div class="cail-logo-row">
         <img src="images/cail-logo.png" alt="CUNY AI Lab logo">
+        <img class="kale" src="images/kale.png" alt="A leaf of kale">
       </div>
       <h1 class="cail-lede"><strong>AI Infrastructure for CUNY, by CUNY.</strong> <span class="cail-description">A faculty- and staff-led initiative that develops and maintains AI tools for teaching, learning, and research.</span></h1>
-      <div class="principle-grid">
-        <div class="principle-card frag">
-          <strong>Privacy by Design</strong>
-          <span>Built on providers that do not retain user data.</span>
-        </div>
-        <div class="principle-card frag">
-          <strong>Transparency</strong>
-          <span>Favoring open-weight models.</span>
-        </div>
-        <div class="principle-card frag">
-          <strong>Environmental Accountability</strong>
-          <span>Visibility into the costs of AI use.</span>
-        </div>
-        <div class="principle-card frag">
-          <strong>Criticality</strong>
-          <span>AI literacy over AI dependency.</span>
-        </div>
-      </div>
       <p class="units-caption">Collaborating Units</p>
       <div class="unit-row">
         <div class="unit-chip"><img src="images/ashp-logo.png" alt="American Social History Project"></div>
@@ -288,39 +271,50 @@
     <figure class="stage blank-stage" aria-hidden="true"></figure>
   </section>
 
-  <section class="slide placeholder-slide crowded" data-slide="cail-offer" data-link="https://cuny.is/cail" aria-label="CUNY AI Lab: What CAIL Offers">
+  <section class="slide placeholder-slide crowded" data-slide="cail-offer" data-link="https://cuny.is/cail" aria-label="CUNY AI Lab: What CAIL Offers and its commitments">
     <div class="content">
       <div class="label">CUNY AI Lab</div>
       <h1>What CAIL Offers</h1>
-      <div class="offer-grid">
-        <div class="offer-card frag">
-          <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
-            <line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/>
-            <circle cx="8.5" cy="7" r="2.5" fill="#fff"/><circle cx="15.5" cy="12" r="2.5" fill="#fff"/><circle cx="7.5" cy="17" r="2.5" fill="#fff"/>
-          </svg>
-          <strong>Tools</strong>
+      <div class="cail-summary">
+        <div class="offer-grid">
+          <div class="offer-card">
+            <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+              <line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/>
+              <circle cx="8.5" cy="7" r="2.5" fill="#fff"/><circle cx="15.5" cy="12" r="2.5" fill="#fff"/><circle cx="7.5" cy="17" r="2.5" fill="#fff"/>
+            </svg>
+            <strong>Tools</strong>
+          </div>
+          <div class="offer-card">
+            <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 4.2 2.6 8.6 12 13l9.4-4.4L12 4.2Z"/><path d="M6.6 10.9v4.3c0 1.6 2.4 2.9 5.4 2.9s5.4-1.3 5.4-2.9v-4.3"/><path d="M21.4 8.6v5.2"/>
+            </svg>
+            <strong>Training &amp; Advising</strong>
+          </div>
+          <div class="offer-card">
+            <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="8.4" r="2.8"/><path d="M7.2 18.6c0-2.6 2.1-4.4 4.8-4.4s4.8 1.8 4.8 4.4"/>
+              <circle cx="4.6" cy="10.8" r="1.9"/><path d="M1.8 17.6c0-2 1.2-3.2 2.8-3.2"/>
+              <circle cx="19.4" cy="10.8" r="1.9"/><path d="M22.2 17.6c0-2-1.2-3.2-2.8-3.2"/>
+            </svg>
+            <strong>Community</strong>
+          </div>
+          <div class="offer-card">
+            <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 6.6C10.5 5.3 8.4 4.6 5.6 4.6H3.1v12.8h2.5c2.8 0 4.9.7 6.4 2"/>
+              <path d="M12 6.6c1.5-1.3 3.6-2 6.4-2h2.5v12.8h-2.5c-2.8 0-4.9.7-6.4 2"/>
+              <path d="M12 6.6v12.8"/>
+            </svg>
+            <strong>Resources</strong>
+          </div>
         </div>
-        <div class="offer-card frag">
-          <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 4.2 2.6 8.6 12 13l9.4-4.4L12 4.2Z"/><path d="M6.6 10.9v4.3c0 1.6 2.4 2.9 5.4 2.9s5.4-1.3 5.4-2.9v-4.3"/><path d="M21.4 8.6v5.2"/>
-          </svg>
-          <strong>Training &amp; Advising</strong>
-        </div>
-        <div class="offer-card frag">
-          <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="8.4" r="2.8"/><path d="M7.2 18.6c0-2.6 2.1-4.4 4.8-4.4s4.8 1.8 4.8 4.4"/>
-            <circle cx="4.6" cy="10.8" r="1.9"/><path d="M1.8 17.6c0-2 1.2-3.2 2.8-3.2"/>
-            <circle cx="19.4" cy="10.8" r="1.9"/><path d="M22.2 17.6c0-2-1.2-3.2-2.8-3.2"/>
-          </svg>
-          <strong>Community</strong>
-        </div>
-        <div class="offer-card frag">
-          <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 6.6C10.5 5.3 8.4 4.6 5.6 4.6H3.1v12.8h2.5c2.8 0 4.9.7 6.4 2"/>
-            <path d="M12 6.6c1.5-1.3 3.6-2 6.4-2h2.5v12.8h-2.5c-2.8 0-4.9.7-6.4 2"/>
-            <path d="M12 6.6v12.8"/>
-          </svg>
-          <strong>Resources</strong>
+        <div class="commitment-col">
+          <p class="units-caption">Our Commitments</p>
+          <ul class="commitment-list">
+            <li><strong>Privacy by Design</strong><span>Built on providers that do not retain or train on user data.</span></li>
+            <li><strong>Transparency</strong><span>Favoring open-weight models.</span></li>
+            <li><strong>Environmental Accountability</strong><span>Visibility into the costs of AI use.</span></li>
+            <li><strong>Criticality</strong><span>AI literacy over AI dependency.</span></li>
+          </ul>
         </div>
       </div>
     </div>

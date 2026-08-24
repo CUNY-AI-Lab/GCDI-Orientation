@@ -69,6 +69,9 @@ This checklist translates the updated orientation instructions into implementati
 17. [x] Add the screenshot-only Tagging the Tower slide in outline order with the exact `cuny.is/ttt` shortlink and update the local deck to 38 slides.
 18. [x] Verify the revised local Manifold and Tagging slides at `1280×720`, the user's `1071×969` review viewport, and mobile `390×844`; require contained images, bounded text, no slide overflow, working navigation/lightbox behavior, and a clean browser console. Enlarge the two `manifold-applications` screenshots in balanced full-slide project cards, restore each source relationship as project type followed by its distinct “Future Iteration” line, and keep all card copy in the deck's regular-weight body typography without ad-hoc bolding.
 19. [x] **New release gate:** the user explicitly approved publication on 2026-08-24 (“push”), then directed the final `manifold-applications` image-size and wording refinements before publication.
+20. [x] Replace the `manifold-journals` screenshot with the newly supplied 1962×1956 JITP journals-page image, preserve the prior source asset, update the image-specific accessible description, and change the second bullet exactly to “Look for JITP Issue 30 general call in early fall.”
+21. [x] Change the `manifold-projects` title exactly from “Class & Passion Projects” to “Classroom Use and Passion Projects.”
+22. [ ] Verify the journal replacement and projects title locally, push the explicitly approved revision, wait for terminal GitHub Pages success, and verify both slides live.
 
 ## Definition of done
 

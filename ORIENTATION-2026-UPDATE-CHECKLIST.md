@@ -71,7 +71,7 @@ This checklist translates the updated orientation instructions into implementati
 19. [x] **New release gate:** the user explicitly approved publication on 2026-08-24 (“push”), then directed the final `manifold-applications` image-size and wording refinements before publication.
 20. [x] Replace the `manifold-journals` screenshot with the newly supplied 1962×1956 JITP journals-page image, preserve the prior source asset, update the image-specific accessible description, and change the second bullet exactly to “Look for JITP Issue 30 general call in early fall.”
 21. [x] Change the `manifold-projects` title exactly from “Class & Passion Projects” to “Classroom Use and Passion Projects.”
-22. [ ] Verify the journal replacement and projects title locally, push the explicitly approved revision, wait for terminal GitHub Pages success, and verify both slides live.
+22. [x] Verify the journal replacement and projects title locally; push commit `439a57d`; wait for GitHub Pages run `32781602552` to complete successfully; verify live slides 29–30 for exact text, the 1962×1956 contained JITP image, standard title sizing, zero overflow, and a clean browser console.
 
 ## Definition of done
 
@@ -84,3 +84,4 @@ This checklist translates the updated orientation instructions into implementati
 - [x] The corrected 37-slide version is published from `fddc415` and independently live-verified after successful GitHub Pages run `32777521621`.
 - [x] The new 38-slide typography and Tagging the Tower revision received explicit publication approval.
 - [x] Push the approved 38-slide revision and its final Manifold comparison refinement (`29b7860`, then `6ccea63`); wait for terminal GitHub Pages success (runs `32779679309` and `32780175425`); verify live slide 15 (`tagging-tower`), slide 27 (`manifold`), and slide 31 (`manifold-applications`) for exact text, regular-weight card typography, image containment, counters, zero overflow, and a clean browser console.
+- [x] Publish and independently live-verify the final JITP journal image/copy and “Classroom Use and Passion Projects” title revision from `439a57d` after successful Pages run `32781602552`.

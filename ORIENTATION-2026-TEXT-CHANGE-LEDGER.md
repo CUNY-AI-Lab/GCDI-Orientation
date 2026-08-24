@@ -1,6 +1,6 @@
 # GCDI Orientation 2026 text-change ledger
 
-This ledger compares the synchronized GitHub baseline at commit `d3d844c` with the published 38-slide revision. The initial implementation was published as `e158b92`, the six-slide Manifold correction as `fddc415`, the typography/Tagging revision as `29b7860`, and the final Manifold comparison refinement as `6ccea63`. It is the durable before → after record for text, labels, links, and image descriptions changed while implementing the August 24, 2026 Google Doc instructions and later user direction.
+This ledger compares the synchronized GitHub baseline at commit `d3d844c` with the published 38-slide revision. The initial implementation was published as `e158b92`, the six-slide Manifold correction as `fddc415`, the typography/Tagging revision as `29b7860`, the Manifold comparison refinement as `6ccea63`, and the final JITP journal/projects revision as `439a57d`. It is the durable before → after record for text, labels, links, and image descriptions changed while implementing the August 24, 2026 Google Doc instructions and later user direction.
 
 ## Slide text and labels
 
@@ -78,5 +78,5 @@ The JITP journal revision also makes one user-directed visible copy change: “L
 For the complete implementation comparison, review:
 
 ```sh
-git diff d3d844c..6ccea63 -- README.md ORIENTATION-2026-UPDATE-CHECKLIST.md ORIENTATION-2026-TEXT-CHANGE-LEDGER.md index.html src/styles.css
+git diff d3d844c..439a57d -- README.md ORIENTATION-2026-UPDATE-CHECKLIST.md ORIENTATION-2026-TEXT-CHANGE-LEDGER.md index.html src/styles.css images/manifold-jitp-journals-2026.png
 ```

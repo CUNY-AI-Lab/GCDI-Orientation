@@ -1,6 +1,6 @@
 # GCDI Orientation 2026 text-change ledger
 
-This ledger compares the synchronized GitHub baseline at commit `d3d844c` with the current local review version. The initial implementation was published as `e158b92`, and the six-slide Manifold correction was published as `fddc415`; the newest entries record the local typography normalization, Commons-aligned Manifold opener, and screenshot-only Tagging the Tower addition. It is the durable before → after record for text, labels, links, and image descriptions changed while implementing the August 24, 2026 Google Doc instructions and later user direction.
+This ledger compares the synchronized GitHub baseline at commit `d3d844c` with the published 38-slide revision. The initial implementation was published as `e158b92`, the six-slide Manifold correction as `fddc415`, the typography/Tagging revision as `29b7860`, and the final Manifold comparison refinement as `6ccea63`. It is the durable before → after record for text, labels, links, and image descriptions changed while implementing the August 24, 2026 Google Doc instructions and later user direction.
 
 ## Slide text and labels
 
@@ -72,8 +72,8 @@ The AI Guidelines slide has a newly supplied QR image, but its visible text and 
 - Enlarged both `manifold-applications` screenshots in two balanced, full-slide project cards; each card keeps the screenshot and its exact “Future Iteration” relationship together while preserving `object-fit: contain` and intrinsic aspect ratio.
 - Updated matching CSS/JavaScript cache keys to `20260824-manifold-project-cards`.
 
-For the complete code-level comparison, review the still-uncommitted local diff with:
+For the complete implementation comparison, review:
 
 ```sh
-git diff -- README.md ORIENTATION-2026-UPDATE-CHECKLIST.md ORIENTATION-2026-TEXT-CHANGE-LEDGER.md index.html src/styles.css
+git diff d3d844c..6ccea63 -- README.md ORIENTATION-2026-UPDATE-CHECKLIST.md ORIENTATION-2026-TEXT-CHANGE-LEDGER.md index.html src/styles.css
 ```

@@ -80,4 +80,4 @@ This checklist translates the updated orientation instructions into implementati
 - [x] The local diff and before → after ledger are ready for user review.
 - [x] The corrected 37-slide version is published from `fddc415` and independently live-verified after successful GitHub Pages run `32777521621`.
 - [x] The new 38-slide typography and Tagging the Tower revision received explicit publication approval.
-- [ ] Push the approved revision, wait for terminal GitHub Pages success, and verify the live Manifold and Tagging the Tower slides.
+- [x] Push the approved 38-slide revision and its final Manifold comparison refinement (`29b7860`, then `6ccea63`); wait for terminal GitHub Pages success (runs `32779679309` and `32780175425`); verify live slide 15 (`tagging-tower`), slide 27 (`manifold`), and slide 31 (`manifold-applications`) for exact text, regular-weight card typography, image containment, counters, zero overflow, and a clean browser console.

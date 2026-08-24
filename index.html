@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="src/styles.css?v=20260824-access-qr" />
+  <link rel="stylesheet" href="src/styles.css?v=20260824-registry" />
 </head>
 <body>
 <div id="image-lightbox" class="lightbox" aria-hidden="true">
@@ -28,7 +28,10 @@
     <span class="header-wordmark">GC Digital Initiatives</span>
   </a>
   <a href="https://cuny.is/gcdi" target="_blank" rel="noopener" class="header-deck-link" id="deckLink">cuny.is/gcdi</a>
-  <a target="_blank" rel="noopener" class="header-secondary-link" id="deckSecondaryLink" hidden></a>
+  <div class="header-context-links" role="group" aria-label="Related slide links">
+    <a target="_blank" rel="noopener" class="header-secondary-link" id="deckSecondaryLink" hidden></a>
+    <a target="_blank" rel="noopener" class="header-tertiary-link" id="deckTertiaryLink" aria-label="CUNY AI Lab Model Registry" hidden></a>
+  </div>
 </header>
 
 <main id="slide-content" role="main" aria-label="Presentation slides">
@@ -322,7 +325,7 @@
     <figure class="stage blank-stage" aria-hidden="true"></figure>
   </section>
 
-  <section class="slide placeholder-slide figure-side" data-slide="cail-sandbox" data-link="https://chat.ailab.gc.cuny.edu" data-secondary-link="https://ailab.gc.cuny.edu/request-access/" data-secondary-link-label="ailab.gc.cuny.edu/request-access/" aria-label="CUNY AI Lab Sandbox">
+  <section class="slide placeholder-slide figure-side" data-slide="cail-sandbox" data-link="https://chat.ailab.gc.cuny.edu" data-secondary-link="https://ailab.gc.cuny.edu/request-access/" data-secondary-link-label="ailab.gc.cuny.edu/request-access/" data-tertiary-link="https://ailab.gc.cuny.edu/models/" data-tertiary-link-label="ailab.gc.cuny.edu/models/" aria-label="CUNY AI Lab Sandbox">
     <div class="content">
       <div class="label">CUNY AI Lab</div>
       <h1>CUNY AI Lab Sandbox</h1>
@@ -576,7 +579,7 @@
   </div>
 </footer>
 
-<script src="src/slides.js?v=20260823-access"></script>
+<script src="src/slides.js?v=20260824-registry"></script>
 <script>
 (function () {
   // Title background adapted from "Slip Planes" (K. Moonshot, Creative Clawing):

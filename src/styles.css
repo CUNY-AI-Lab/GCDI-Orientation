@@ -74,8 +74,11 @@ header .bar { pointer-events: auto; display: flex; align-items: center; gap: 8px
 .header-deck-link::before { content: ''; width: 0.5em; height: 0.5em; border-radius: 999px; background: var(--accent); flex: 0 0 auto; }
 .header-deck-link:hover { color: #fff; background: var(--accent); border-color: var(--accent); }
 .header-deck-link:hover::before { background: #fff; }
-.header-secondary-link { position: absolute; top: calc(50% + 23px); right: 20px; pointer-events: auto; font-family: var(--font-mono); font-size: clamp(12px, 1.1vw, 17px); font-weight: 500; line-height: 1; color: var(--accent-deep); text-decoration-thickness: 1px; text-underline-offset: 2px; white-space: nowrap; }
-.header-secondary-link:hover { color: var(--accent-deep); }
+.header-context-links { position: absolute; top: calc(50% + 23px); right: 20px; display: flex; align-items: center; justify-content: flex-end; gap: clamp(12px, 1.5vw, 24px); max-width: calc(100vw - 96px); pointer-events: none; }
+.header-secondary-link,
+.header-tertiary-link { pointer-events: auto; font-family: var(--font-mono); font-size: clamp(12px, 1vw, 16px); font-weight: 500; line-height: 1; color: var(--accent-deep); text-decoration-thickness: 1px; text-underline-offset: 2px; white-space: nowrap; }
+.header-secondary-link:hover,
+.header-tertiary-link:hover { color: var(--accent); }
 
 /* ── Footer / slider ── */
 .sticky-footer { position: fixed; bottom: 0; left: 0; right: 0; z-index: 30; background: linear-gradient(to top, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.8) 60%, transparent 100%); padding: 14px 20px calc(16px + env(safe-area-inset-bottom, 0px)); pointer-events: none; }
@@ -285,6 +288,9 @@ section.slide.slide-title { padding: 0; }
   section.slide.slide-title, section.slide.slide-break { flex-direction: column; }
 }
 @media (max-width: 719.98px) {
+  .header-context-links { top: calc(50% + 20px); flex-wrap: wrap; column-gap: 10px; row-gap: 2px; max-width: calc(100vw - 88px); }
+  .header-secondary-link,
+  .header-tertiary-link { font-size: clamp(10px, 2.8vw, 12px); }
   section.slide:not(.slide-title) .content { flex: 1 1 48%; min-height: 0; }
   section.slide:not(.slide-title) .stage { flex: 1 1 52%; min-height: 0; }
   .placeholder-slide.crowded .stage { display: none; }

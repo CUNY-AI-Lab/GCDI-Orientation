@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="src/styles.css?v=20260824-manifold-tower-final" />
+  <link rel="stylesheet" href="src/styles.css?v=20260824-manifold-project-cards" />
 </head>
 <body>
 <div id="image-lightbox" class="lightbox" aria-hidden="true">
@@ -573,23 +573,29 @@
   </section>
 
   <section class="slide placeholder-slide manifold-slide manifold-comparison-slide" data-slide="manifold-applications" data-link="https://cuny.manifoldapp.org" aria-label="A passion project and open class application of Manifold">
-    <div class="content">
+    <div class="manifold-comparison-heading">
       <div class="label">Manifold</div>
       <h1>Two Ways to Build</h1>
-      <ul class="arrow-bullets manifold-application-list">
-        <li>
-          <strong><em>Personal Passion project (make work public)</em></strong>
-          <span class="manifold-future"><strong>Future Iteration:</strong> Digital Dissertation</span>
-        </li>
-        <li>
-          <strong>Culminating Project for class at Brooklyn College</strong>
-          <span class="manifold-future"><strong>Future Iteration:</strong> co-created, co-built project for and with K12 educators</span>
-        </li>
-      </ul>
     </div>
-    <div class="stage pair-stage manifold-project-pair" role="group" aria-label="Two Manifold project applications">
-      <img src="images/manifold-simidor-project-2026.png" alt="Daniel Simidor: a New York Haitian Revolutionary Manifold project page, with a bilingual project description, portrait, teaching guides, archives, and reflection questions">
-      <img src="images/manifold-open-class-project-2026.png" alt="Culturally Relevant Applications at Brooklyn College Manifold class project page, with a project overview, classroom image, class-site link, and student text">
+    <div class="stage manifold-comparison-grid" role="group" aria-label="Two Manifold project applications">
+      <figure class="manifold-project-card">
+        <div class="manifold-project-image">
+          <img src="images/manifold-simidor-project-2026.png" alt="Daniel Simidor: a New York Haitian Revolutionary Manifold project page, with a bilingual project description, portrait, teaching guides, archives, and reflection questions">
+        </div>
+        <figcaption class="manifold-project-copy">
+          <h2>Personal Passion project <span>(make work public)</span></h2>
+          <p class="manifold-project-future"><span>Future Iteration:</span> Digital Dissertation</p>
+        </figcaption>
+      </figure>
+      <figure class="manifold-project-card">
+        <div class="manifold-project-image">
+          <img src="images/manifold-open-class-project-2026.png" alt="Culturally Relevant Applications at Brooklyn College Manifold class project page, with a project overview, classroom image, class-site link, and student text">
+        </div>
+        <figcaption class="manifold-project-copy">
+          <h2>Culminating Project for class at Brooklyn College</h2>
+          <p class="manifold-project-future"><span>Future Iteration:</span> co-created, co-built project for and with K12 educators</p>
+        </figcaption>
+      </figure>
     </div>
   </section>
 
@@ -722,7 +728,7 @@
   </div>
 </footer>
 
-<script src="src/slides.js?v=20260824-manifold-tower-final"></script>
+<script src="src/slides.js?v=20260824-manifold-project-cards"></script>
 <script>
 (function () {
   // Title background adapted from "Slip Planes" (K. Moonshot, Creative Clawing):

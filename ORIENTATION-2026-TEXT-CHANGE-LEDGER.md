@@ -69,8 +69,8 @@ The AI Guidelines slide has a newly supplied QR image, but its visible text and 
 - Added contained Commons composite-image layout and full-stage Sandbox fragment containment.
 - Kept the overview grids within their existing capacities while expanding the deck to 38 slides.
 - Replaced the Manifold-only 42%-zoom heading/caption treatment with shared deck typography and deck-native content/image structures.
-- Enlarged both `manifold-applications` screenshots by stacking them in full-width rows inside the image stage while preserving `object-fit: contain` and their intrinsic aspect ratios.
-- Updated matching CSS/JavaScript cache keys to `20260824-manifold-tower-final`.
+- Enlarged both `manifold-applications` screenshots in two balanced, full-slide project cards; each card keeps the screenshot and its exact “Future Iteration” relationship together while preserving `object-fit: contain` and intrinsic aspect ratio.
+- Updated matching CSS/JavaScript cache keys to `20260824-manifold-project-cards`.
 
 For the complete code-level comparison, review the still-uncommitted local diff with:
 

@@ -287,12 +287,20 @@ section.slide.slide-title { padding: 0; }
 .manifold-slide .stage img { object-fit: contain; object-position: center; }
 .manifold-reading-stage { display: grid; grid-template-rows: minmax(0, 0.36fr) minmax(0, 0.64fr); gap: clamp(8px, 1.2vw, 16px); padding: clamp(8px, 1.2vw, 16px); }
 .manifold-reading-stage img { display: block; width: 100%; height: 100%; min-width: 0; min-height: 0; object-fit: contain; object-position: center; }
-.manifold-application-list { margin-top: clamp(4px, 0.8vh, 10px); }
-.manifold-application-list li { font-size: var(--fs-body-compact); line-height: 1.34; margin-bottom: clamp(12px, 1.8vh, 22px); }
-.manifold-application-list strong { color: var(--accent-deep); }
-.manifold-future { display: block; margin-top: 0.22em; color: var(--fg-strong); font-weight: 700; }
-.manifold-project-pair { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: clamp(8px, 1.1vh, 12px); padding: clamp(8px, 1vw, 14px); }
-.manifold-project-pair img { width: 100%; height: 100%; min-width: 0; min-height: 0; max-width: 100%; max-height: 100%; object-fit: contain; object-position: center; }
+section.slide.manifold-comparison-slide { flex-direction: column; gap: clamp(8px, 1.2vh, 14px); }
+section.slide.manifold-comparison-slide .manifold-comparison-heading { flex: 0 0 auto; display: flex; flex-direction: column; width: 100%; max-width: none; justify-content: flex-start; padding: 0 clamp(8px, 1.4vw, 20px); }
+.manifold-comparison-heading .label { display: inline-flex; align-items: center; gap: 10px; margin-bottom: clamp(3px, 0.5vh, 7px); color: var(--muted); font-family: var(--font-mono); font-size: var(--fs-label); font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; }
+.manifold-comparison-heading .label::before { content: ''; display: inline-block; width: 22px; height: 2px; background: var(--accent); opacity: 0.8; }
+.manifold-comparison-heading h1 { margin: 0; color: var(--accent); font-size: var(--fs-display); font-weight: 700; letter-spacing: -0.01em; line-height: 1.1; text-wrap: balance; }
+section.slide.manifold-comparison-slide .manifold-comparison-grid { flex: 1 1 auto; width: 100%; min-height: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(12px, 1.5vw, 20px); padding: 0; border: 0; background: transparent; overflow: visible; }
+.manifold-project-card { display: grid; grid-template-rows: minmax(0, 1fr) auto; min-width: 0; min-height: 0; margin: 0; overflow: hidden; border: 1px solid var(--stroke); border-radius: 14px; background: #fff; }
+.manifold-project-image { display: flex; align-items: center; justify-content: center; min-width: 0; min-height: 0; padding: clamp(8px, 1vw, 14px); overflow: hidden; }
+.manifold-project-image img { display: block; width: 100%; height: 100%; min-width: 0; min-height: 0; max-width: 100%; max-height: 100%; object-fit: contain; object-position: center; border-radius: 7px; }
+.manifold-project-copy { padding: clamp(12px, 1.6vh, 18px) clamp(14px, 1.5vw, 20px); border-top: 1px solid var(--rule); background: var(--bg-soft); font-family: var(--font-body); font-weight: 400; }
+.manifold-project-copy h2 { margin: 0; color: var(--fg-strong); font-family: var(--font-body); font-size: clamp(19px, 1.65vw, 27px); line-height: 1.2; font-weight: 400; }
+.manifold-project-copy h2 span { color: inherit; font-weight: inherit; }
+.manifold-project-future { margin: clamp(8px, 1vh, 12px) 0 0; color: var(--fg-strong); font-family: var(--font-body); font-size: clamp(19px, 1.65vw, 27px); line-height: 1.25; font-weight: 400; }
+.manifold-project-future span { color: var(--accent-deep); font: inherit; }
 
 /* Screenshot-only outline item: the deck link pill carries the shortlink. */
 section.slide.tagging-tower-slide { flex-direction: column; }
@@ -321,9 +329,11 @@ section.slide.tagging-tower-slide .stage img { width: 100%; height: 100%; object
   section.slide:not(.slide-title) .stage { flex: 1 1 52%; min-height: 0; }
   .placeholder-slide.crowded .stage { display: none; }
   .manifold-reading-stage { grid-template-rows: minmax(0, 0.34fr) minmax(0, 0.66fr); gap: 6px; padding: 6px; }
-  .manifold-project-pair { gap: 6px; padding: 6px; }
-  .manifold-project-pair img { width: 100%; height: 100%; }
-  .manifold-application-list li { font-size: var(--fs-body-compact); line-height: 1.28; margin-bottom: 8px; }
+  section.slide.manifold-comparison-slide .manifold-comparison-grid { flex: 1 1 auto; grid-template-columns: minmax(0, 1fr); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 6px; }
+  .manifold-project-card { grid-template-columns: minmax(0, 0.45fr) minmax(0, 0.55fr); grid-template-rows: minmax(0, 1fr); }
+  .manifold-project-copy { display: flex; flex-direction: column; justify-content: center; padding: 8px 10px; border-top: 0; border-left: 1px solid var(--rule); }
+  .manifold-project-copy h2 { font-size: clamp(15px, 4.2vw, 18px); }
+  .manifold-project-future { margin-top: 7px; font-size: clamp(14px, 3.8vw, 17px); }
   .title-card h1 { font-size: clamp(26px, 7vw, 40px); }
   .presenter-row { grid-template-columns: 1fr; gap: 2px; }
   .presenter-row:nth-child(odd) { transform: translateX(-1.5%); }

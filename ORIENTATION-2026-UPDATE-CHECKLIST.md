@@ -9,6 +9,7 @@ This checklist translates the updated orientation instructions into implementati
 - [x] Run a fast-forward-only pull from `origin/main`; local `HEAD` and `origin/main` are both `d3d844c` (`Already up to date`, 2026-08-24).
 - [x] Read the full native Google Doc, not only extracted prose: [GCDI Orientation 2026](https://docs.google.com/document/d/1LbE9tifmJ4hQaI40B-wSfx01n2O7htQ_cnhvshbgcd4/edit).
 - [x] Record the Doc version used for implementation: modified `2026-08-24T19:28:15.682Z`, revision `AIroW34nCZlkz6c28BE42-78hh6aVXjmLyiAUf9CiPf2BoPvNfzbHiZwT7Hxj7lC7IrlmmvSFxEqWtguePO3fP0cx8srhmOD8ID-GhE7PS0`.
+- [x] Re-read the updated outline section for Tagging the Tower from revision `AIroW340zNsaHN0Vcqn4hiTMwgmoSkgeBVz92UV1icAyZ5BD1aO8UflNV6mTSG33dDTejtxJ9jFDUWhuF4I89jC-BuJWdEeLq9MqcLxqSf4`; confirm the exact entry `Tagging the Tower || cuny.is/ttt` follows Office Hours.
 - [x] Inventory the Doc's 14 embedded image objects (13 unique images) and map each image to its adjacent instruction.
 - [x] Verify the direct Digital Fellows Linktree destination: `https://linktr.ee/GCDigitalFellows`.
 - [x] Verify that the old PDIG short links are broken or misdirected and use the replacement site shown in the Doc: `https://digitalgrants.commons.gc.cuny.edu/`.
@@ -33,13 +34,14 @@ This checklist translates the updated orientation instructions into implementati
 - [x] `dsl-hours` (original slide 13): remove the two outdated posters and use the supplied 2026 Open House postcard.
 - [x] `dsl-hours`: include “Open House — Tuesday, September 15, 12–3 PM, Digital Scholarship Lab, Room 7414.”
 - [x] `dsl-hours`: remove “on your schedule,” describe consultations as scheduled at a mutually selected time, and link `https://cuny.is/gcdi-consults`.
+- [x] Insert `tagging-tower` immediately after `dsl-hours`: use the supplied 2602×1962 screenshot without cropping or distortion, add no slide copy, and expose only `cuny.is/ttt` through the existing deck-link treatment.
 - [x] `ai-guidelines`: use the newly supplied guidelines/programming QR image and preserve its decoded destination.
 - [x] `commons` (original slide 20): retain the platform overview and add the supplied Commons statistics in a readable, non-stretched treatment.
 - [x] Insert `commons-cv` after `commons`: explain profiles/CVs and use the supplied Commons profile screenshot.
 - [x] Insert `commons-courses`: explain teaching/course uses and use the supplied courses screenshot.
 - [x] Insert `commons-groups`: explain connection and collaboration through groups and use the supplied groups screenshot.
 - [x] Insert `commons-sites`: explain project/publication sites and use the supplied site screenshot.
-- [x] Expand the Manifold section in the required order: source slide 2 (`manifold`), source slide 4 (`manifold-reading-groups`), source slide 5 (`manifold-journals`), source slide 6 (`manifold-projects`), source slide 7 (`manifold-applications`), then `manifold-oer`. Mirror each source slide's wide, stacked, single-image, or paired structure, label every slide “Manifold,” and display all seven source PNGs with `object-fit: contain` so their intrinsic aspect ratios remain intact.
+- [x] Expand the Manifold section in the required order: source slide 2 (`manifold`), source slide 4 (`manifold-reading-groups`), source slide 5 (`manifold-journals`), source slide 6 (`manifold-projects`), source slide 7 (`manifold-applications`), then `manifold-oer`. Retain every required image and relationship while making the user-directed layout concession: use the orientation deck's shared title/body scale and content/image structure rather than rigid PowerPoint mirroring. Match the Commons opener with label “Platforms” and title “Manifold Scholarship”; label the five follow-up slides “Manifold”; keep every screenshot at `object-fit: contain`.
 - [x] `grants` and `grants-samples` (original slides 23–24): replace the broken short link with `https://digitalgrants.commons.gc.cuny.edu/`.
 - [x] `grants`: replace the old site screenshot with the newly supplied PDIG site screenshot and update alt text.
 - [x] `gcdi-fifth-floor` (original slide 27): remove the inaccurate fifth-floor/Data Lab framing and replace it with source-faithful language: DATA Labs have been run on Zoom; Office Hours are hosted in the Digital Scholarship Lab on the seventh floor and on Zoom; dates and times are forthcoming.
@@ -63,6 +65,10 @@ This checklist translates the updated orientation instructions into implementati
 13. [x] The user approved and the initial 33-slide implementation was published as commit `e158b92`; GitHub Pages run `32776095038` completed successfully. The later in-window review showed that its two-slide Manifold interpretation was too narrow.
 14. [x] **Correction release gate:** user explicitly approved the corrected version for publication on 2026-08-24 (“Push this update and fix manifold pronto”).
 15. [x] Commit and push the correction as `fddc415`; wait for GitHub Pages run `32777521621` to finish successfully; then verify the deployed sequence independently at slides 26–31, including exact “Manifold” labels, 37-slide counters, image loading and aspect-ratio containment, Next-button navigation, image lightbox behavior, and an empty browser console.
+16. [x] Normalize the local Manifold revision to deck-native typography: remove the 42%-zoom heading structure, move explanatory copy into `.content`, and keep screenshots as supporting evidence.
+17. [x] Add the screenshot-only Tagging the Tower slide in outline order with the exact `cuny.is/ttt` shortlink and update the local deck to 38 slides.
+18. [x] Verify the revised local Manifold and Tagging slides at `1280×720`, the user's `1071×969` review viewport, and mobile `390×844`; require contained images, bounded text, no slide overflow, working navigation/lightbox behavior, and a clean browser console. Enlarge the two `manifold-applications` screenshots in stacked full-width rows and restore each source relationship as project type followed by its distinct “Future Iteration” line.
+19. [x] **New release gate:** the user explicitly approved publication on 2026-08-24 (“push”), then directed the final `manifold-applications` image-size and wording refinements before publication.
 
 ## Definition of done
 
@@ -73,3 +79,5 @@ This checklist translates the updated orientation instructions into implementati
 - [x] Focused interaction and console checks pass after the Manifold expansion.
 - [x] The local diff and before → after ledger are ready for user review.
 - [x] The corrected 37-slide version is published from `fddc415` and independently live-verified after successful GitHub Pages run `32777521621`.
+- [x] The new 38-slide typography and Tagging the Tower revision received explicit publication approval.
+- [ ] Push the approved revision, wait for terminal GitHub Pages success, and verify the live Manifold and Tagging the Tower slides.

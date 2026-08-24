@@ -12,6 +12,7 @@ const lightboxCaption = document.getElementById('lightbox-caption');
 const lightboxClose = document.getElementById('lightbox-close');
 const announcer = document.getElementById('slide-announcer');
 const deckLink = document.getElementById('deckLink');
+const deckSecondaryLink = document.getElementById('deckSecondaryLink');
 const deckLinkDefault = deckLink ? deckLink.getAttribute('href') : '';
 const leafletMaps = window.__deckLeafletMaps || (window.__deckLeafletMaps = []);
 let announceTimer = null;
@@ -97,6 +98,19 @@ function show(i, revealAll) {
     deckLink.setAttribute('href', link);
     deckLink.textContent = slides[idx].getAttribute('data-link-label') ||
       link.replace(/^https?:\/\//, '').replace(/\/$/, '');
+  }
+
+  if (deckSecondaryLink) {
+    var secondaryLink = slides[idx].getAttribute('data-secondary-link');
+    if (secondaryLink) {
+      deckSecondaryLink.setAttribute('href', secondaryLink);
+      deckSecondaryLink.textContent = slides[idx].getAttribute('data-secondary-link-label') || secondaryLink;
+      deckSecondaryLink.hidden = false;
+    } else {
+      deckSecondaryLink.hidden = true;
+      deckSecondaryLink.removeAttribute('href');
+      deckSecondaryLink.textContent = '';
+    }
   }
 
   var f = slides[idx].querySelector('.content');

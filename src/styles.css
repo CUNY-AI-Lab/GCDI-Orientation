@@ -74,6 +74,8 @@ header .bar { pointer-events: auto; display: flex; align-items: center; gap: 8px
 .header-deck-link::before { content: ''; width: 0.5em; height: 0.5em; border-radius: 999px; background: var(--accent); flex: 0 0 auto; }
 .header-deck-link:hover { color: #fff; background: var(--accent); border-color: var(--accent); }
 .header-deck-link:hover::before { background: #fff; }
+.header-secondary-link { position: absolute; top: calc(50% + 23px); right: 20px; pointer-events: auto; font-family: var(--font-mono); font-size: clamp(11px, 0.9vw, 14px); line-height: 1; color: var(--muted); text-decoration-thickness: 1px; text-underline-offset: 2px; white-space: nowrap; }
+.header-secondary-link:hover { color: var(--accent-deep); }
 
 /* ── Footer / slider ── */
 .sticky-footer { position: fixed; bottom: 0; left: 0; right: 0; z-index: 30; background: linear-gradient(to top, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.8) 60%, transparent 100%); padding: 14px 20px calc(16px + env(safe-area-inset-bottom, 0px)); pointer-events: none; }

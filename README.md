@@ -12,11 +12,14 @@ GCDI aesthetic: white slides, dark grey text, orange accents from the GCDI logo.
 
 ## Structure
 
-33 slides following the updated 2026 orientation outline: Introduction → Degree Programs →
+37 slides following the updated 2026 orientation outline: Introduction → Degree Programs →
 Support for Digital Scholarship (GC Digital Scholarship Lab · CUNY AI Lab · AI
 Guidelines) → Platforms (Commons · Manifold) → Grants (PDIG) → Labs & Spaces → Close.
 The expanded deck adds the Data Quilt example and dedicated Commons slides for
-profiles/CVs, courses, groups, and sites.
+profiles/CVs, courses, groups, and sites. Its Manifold sequence mirrors source slides
+2, 4, 5, 6, and 7 from the supplied PowerPoint, then returns to the orientation's
+Open Education Projects & Workshops slide; the PowerPoint title, introduction, and
+thank-you/contact slides remain excluded.
 
 Content and screenshots combine retained 2025 orientation material with updates from
 the August 24, 2026 orientation instructions and the supplied `GC Orientation.pptx`

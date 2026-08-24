@@ -1,6 +1,6 @@
 # GCDI Orientation 2026 text-change ledger
 
-This ledger compares the synchronized GitHub baseline at commit `d3d844c` with the local, uncommitted review version. It is the durable before → after record for text, labels, links, and image descriptions changed while implementing the August 24, 2026 Google Doc instructions.
+This ledger compares the synchronized GitHub baseline at commit `d3d844c` with the current local review version. The initial implementation was published as `e158b92`; the additional Manifold entries below record the user's subsequent correction from that two-slide interpretation to the explicit six-slide sequence. It is the durable before → after record for text, labels, links, and image descriptions changed while implementing the August 24, 2026 Google Doc instructions and later slide-selection direction.
 
 ## Slide text and labels
 
@@ -23,12 +23,16 @@ This ledger compares the synchronized GitHub baseline at commit `d3d844c` with t
 | `commons-courses` | No corresponding slide | “Courses”; “Use Commons course sites to support teaching and learning”; “Bring course materials, links, and class activity into one place”; “Discover featured courses from across CUNY” |
 | `commons-groups` | No corresponding slide | “Groups”; “Join or create a group around a program, center, method, or shared interest”; “Use activity, forums, events, libraries, and membership tools to collaborate” |
 | `commons-sites` | No corresponding slide | “Sites”; “Publish public-facing research, teaching, and institutional projects”; “Build a site within the Commons and connect it to the wider CUNY community” |
-| `manifold` | “Manifold @CUNY” | “Manifold @ CUNY” |
-| `manifold` | “An intuitive, collaborative, open-source platform for digital publishing”; “Iterative texts, powerful annotation tools, rich media, and reading groups”; “Free for the entire CUNY community” | “Browse original scholarship, teaching handbooks, and collaborative student projects”; “Find customized course versions of public-domain texts and textbooks” |
-| `manifold-oer` | “Open Educational Resources, journals, and classroom editions of public-domain texts”; “Original scholarship, teaching handbooks, and collaborative student projects”; “Workshops on building your own Manifold project throughout the year” | “Make a personal passion project public and develop it toward a digital dissertation”; “Build a culminating project for a class at Brooklyn College and carry it forward as a co-created, co-built project for and with K–12 educators”; “Join workshops on building your own Manifold project throughout the year” |
+| `manifold` | “Manifold @CUNY” plus the older welcome screenshot | Source slide 2 is presented as the complete “Featured Projects” composition, including its original description and project grid |
+| `manifold-reading-groups` | No corresponding slide | “Student Applications: Reading Groups”; “Social annotations”; “Class assignment”; “Student-led reading groups for dissertation feedback” |
+| `manifold-journals` | No corresponding slide | “Student Applications: Journals”; “Opportunity to publish in an open journal”; “General CFP will be out in the early fall for issue 30” |
+| `manifold-projects` | No corresponding slide | “Student Application: Projects”; “Class assignment”; “Personal Passion project (make work public)” |
+| `manifold-applications` | No corresponding slide | “My Application: Passion Project + Open Class”; “Personal Passion project (make work public)”; “Future Iteration: Digital Dissertation”; “Culminating Project for class at Brooklyn College”; “Future Iteration: co-created, co-built project for and with K12 educators” |
+| `manifold-oer` | “Open Educational Resources, journals, and classroom editions of public-domain texts”; “Original scholarship, teaching handbooks, and collaborative student projects”; “Workshops on building your own Manifold project throughout the year” | Text restored unchanged as a distinct final Manifold slide after the five selected PowerPoint slides; visible `cuny.manifoldapp.org` link added |
+| All six Manifold slides | Section label “Platforms” or no separate deck label | Section label “Manifold” |
 | `gcdi-fifth-floor` | “GCDI on the Fifth Floor”; “365 Fifth Avenue, Suite 5307”; “Data Lab: an informal, interdisciplinary space to discuss all things data”; “Drop-in hours, workshops, consultations, and user groups” | “DATA Labs & Office Hours”; “DATA Labs have previously been run on Zoom”; “Office Hours are hosted in the Digital Scholarship Lab on the seventh floor — Room 7414 — and on Zoom”; “Dates and times forthcoming” |
 
-The Git/GitHub and Introduction to R workshop rows were already correct and their text did not change. The three existing Commons overview bullets also did not change. The supplied Manifold mini-deck contained eight slides; only source slides 2 and 7 were required to replace the two existing Manifold slots. The title/introduction material and “Thank you!” slide were explicitly excluded.
+The Git/GitHub and Introduction to R workshop rows were already correct and their text did not change. The three existing Commons overview bullets also did not change. The supplied Manifold mini-deck contained eight slides. The user's final selection is source slides 2, 4, 5, 6, and 7, followed by the existing Open Education Projects & Workshops slide; source slides 1, 3, and 8 are explicitly excluded.
 
 ## Links and accessible descriptions
 
@@ -43,10 +47,11 @@ The Git/GitHub and Introduction to R workshop rows were already correct and thei
 | `commons` image description | Homepage-only overview | Separate descriptions for the supplied Commons statistics and the retained homepage image |
 | `manifold` context link | CUNY Manifold site | Retains the CUNY Manifold site without importing contact material from the excluded “Thank you!” slide |
 | `manifold` image/description | Older Manifold welcome screenshot | Lossless 2048×1317 Featured Projects source PNG, with an image-specific description naming the four fully visible projects |
-| `manifold-oer` images/descriptions | Older Featured Projects screenshot | Two lossless project screenshots from source slide 7, shown without cropping or stretching and described separately as the Daniel Simidor project and Brooklyn College open-class project |
+| `manifold-applications` images/descriptions | No corresponding slide | Two lossless project screenshots from source slide 7, shown without cropping or stretching and described separately as the Daniel Simidor project and Brooklyn College open-class project |
+| `manifold-oer` images/descriptions | Older Featured Projects screenshot | No repeated screenshot; the slide is a distinct text-led close to the Manifold sequence |
 | `grants` and `grants-samples` links | `https://cuny.is/pdig` | `https://digitalgrants.commons.gc.cuny.edu/` with visible label `digitalgrants.commons.gc.cuny.edu` |
 | `grants` image description | General PDIG program description | Describes the current PDIG site, navigation, news, and featured bilingual youth texting corpus project |
-| Slide counter | `1 / 26`, scrubber maximum `26` | `1 / 33`, scrubber maximum `33` |
+| Slide counter | `1 / 26`, scrubber maximum `26` | `1 / 37`, scrubber maximum `37` |
 
 The AI Guidelines slide has a newly supplied QR image, but its visible text and decoded destination did not change. The data-quilt and four new Commons images each have image-specific alt text in `index.html`.
 
@@ -54,14 +59,14 @@ The AI Guidelines slide has a newly supplied QR image, but its visible text and 
 
 **Before:** “27 slides following the 2026 orientation outline,” followed by a statement that content and screenshots carried over from the 2025 deck.
 
-**After:** “33 slides following the updated 2026 orientation outline,” an explicit note that the deck adds the Data Quilt and Commons profiles/CVs, courses, groups, and sites slides, and a statement that the deck combines retained 2025 material with the August 24, 2026 instructions and supplied Manifold source deck.
+**After:** “37 slides following the updated 2026 orientation outline,” an explicit note that the deck adds the Data Quilt and Commons profiles/CVs, courses, groups, and sites slides, and a statement that the Manifold sequence mirrors PowerPoint slides 2, 4, 5, 6, and 7 before returning to the distinct Open Education Projects & Workshops slide.
 
 ## Non-text implementation changes
 
-- Imported fifteen source images used by the deck, including three lossless PNGs from the supplied Manifold source; omitted the duplicate QR object, optional tall Linktree screenshot, and non-required Manifold slides.
+- Imported nineteen source images used by the deck, including seven byte-identical PNGs from the selected Manifold source slides; omitted the duplicate QR object, optional tall Linktree screenshot, and excluded Manifold slides 1, 3, and 8.
 - Added contained Commons composite-image layout and full-stage Sandbox fragment containment.
-- Expanded overview grids to hold 33 slides without scrolling.
-- Updated matching CSS/JavaScript cache keys to `20260824-manifold`.
+- Expanded overview grids to hold 37 slides without scrolling.
+- Updated matching CSS/JavaScript cache keys to `20260824-manifold-sequence`.
 
 For the complete code-level comparison, review the still-uncommitted local diff with:
 

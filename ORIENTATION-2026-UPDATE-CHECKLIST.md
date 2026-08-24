@@ -12,7 +12,7 @@ This checklist translates the updated orientation instructions into implementati
 - [x] Inventory the Doc's 14 embedded image objects (13 unique images) and map each image to its adjacent instruction.
 - [x] Verify the direct Digital Fellows Linktree destination: `https://linktr.ee/GCDigitalFellows`.
 - [x] Verify that the old PDIG short links are broken or misdirected and use the replacement site shown in the Doc: `https://digitalgrants.commons.gc.cuny.edu/`.
-- [x] Inspect the supplied `/Users/milwright/Desktop/GC Orientation.pptx` Manifold source deck. Use source slide 2 (“Featured Projects”) and source slide 7 (“My Application: Passion Project + Open Class”) as the two required replacements. Native slide ID `g3f845ce52fd_0_43` maps to source slide 8, but per the user's later direction, exclude that “Thank you!” slide along with the title/introduction material; leave the other detailed application slides available but unused because they are not required for the two-slide orientation slot.
+- [x] Inspect the supplied `/Users/milwright/Desktop/GC Orientation.pptx` Manifold source deck. Per the user's final explicit sequence, use source slides 2, 4, 5, 6, and 7 in that order, followed by the existing “Open Education Projects & Workshops” orientation slide. Exclude source slide 1 (title), source slide 3 (introduction/biography/contact), and source slide 8 (“Thank you!”/workshop/contact close).
 
 ## Source-to-slide implementation checklist
 
@@ -39,7 +39,7 @@ This checklist translates the updated orientation instructions into implementati
 - [x] Insert `commons-courses`: explain teaching/course uses and use the supplied courses screenshot.
 - [x] Insert `commons-groups`: explain connection and collaboration through groups and use the supplied groups screenshot.
 - [x] Insert `commons-sites`: explain project/publication sites and use the supplied site screenshot.
-- [x] `manifold` and `manifold-oer` (original slides 21–22): replace only the two required source slides—source slide 2 for Featured Projects and source slide 7 for the passion-project/open-class examples. Extract all three source PNGs losslessly and display them with `object-fit: contain` so their 2048×1317, 2048×1446, and 2048×1518 aspect ratios remain intact.
+- [x] Expand the Manifold section in the required order: source slide 2 (`manifold`), source slide 4 (`manifold-reading-groups`), source slide 5 (`manifold-journals`), source slide 6 (`manifold-projects`), source slide 7 (`manifold-applications`), then `manifold-oer`. Mirror each source slide's wide, stacked, single-image, or paired structure, label every slide “Manifold,” and display all seven source PNGs with `object-fit: contain` so their intrinsic aspect ratios remain intact.
 - [x] `grants` and `grants-samples` (original slides 23–24): replace the broken short link with `https://digitalgrants.commons.gc.cuny.edu/`.
 - [x] `grants`: replace the old site screenshot with the newly supplied PDIG site screenshot and update alt text.
 - [x] `gcdi-fifth-floor` (original slide 27): remove the inaccurate fifth-floor/Data Lab framing and replace it with source-faithful language: DATA Labs have been run on Zoom; Office Hours are hosted in the Digital Scholarship Lab on the seventh floor and on Zoom; dates and times are forthcoming.
@@ -52,23 +52,24 @@ This checklist translates the updated orientation instructions into implementati
 2. [x] Implement text/link replacements against stable `data-slide` identifiers, not ordinal selectors.
 3. [x] Add the data-quilt and Commons slides using existing accessible slide patterns; keep all meaning-bearing screenshot content visible with `object-fit: contain`.
 4. [x] Add concise, image-specific alt text and useful `aria-label` values for every new or replaced visual.
-5. [x] Reconcile the implementation against every checkbox above; use only the two required Manifold source slides, exclude introduction/thank-you material, and do not import optional application slides.
-6. [x] Run structural checks: `git diff --check`, JavaScript syntax validation, unique `data-slide` IDs, valid image paths, valid local anchors, and current slide-counter initialization.
-7. [x] Serve the deck locally and verify the flow: deck loads → each changed slide renders → keyboard/scrubber navigation advances to the expected slide → contextual links update → image lightbox opens and closes.
-8. [x] Audit every slide at desktop `1280×720` and mobile `390×844`: no slide, `.content`, or `.stage` overflow; no clipping; no unintended scrolling; no unreadable wrapping; no distorted screenshots.
-9. [x] Check console warnings/errors and missing image/network requests.
-10. [x] Capture focused rendered evidence for the data quilt, updated DSL sequence, expanded Commons sequence, grants update, revised Office Hours/DATA Labs slide, and at least one mobile viewport.
+5. [x] Reconcile the implementation against every checkbox above; include source slides 2, 4, 5, 6, and 7, exclude source slides 1, 3, and 8, and retain a distinct final Open Education Projects & Workshops slide.
+6. [x] Re-run structural checks for the 37-slide correction: `git diff --check`, JavaScript syntax validation, unique `data-slide` IDs, valid image paths, valid local anchors, and current slide-counter initialization.
+7. [x] Serve the corrected deck locally and verify the flow: slide 25 → source slides 2, 4, 5, 6, and 7 → Open Education Projects & Workshops → grants; confirm contextual links and image lightbox behavior.
+8. [x] Re-audit every corrected Manifold slide at desktop `1280×720` and mobile `390×844`: no overflow, clipping, unintended scrolling, unreadable wrapping, cropping, or distorted screenshots.
+9. [x] Re-check console warnings/errors and missing image/network requests.
+10. [x] Capture focused rendered evidence for the complete six-slide Manifold sequence at desktop and mobile sizes.
 11. [x] Produce a before → after text ledger and retain the complete local `git diff` for review.
-12. [x] Present the local changes, QA evidence, completed Manifold replacement, and remaining risks to the user.
-13. [x] **Release gate: do not commit, push, trigger GitHub Pages, or claim the live deck is updated until the user explicitly approves publication.**
-14. [ ] After approval only: commit, push to `origin/main`, wait for terminal GitHub Pages success, and verify the live slide deck and interactions independently of local QA.
+12. [x] Present the corrected local sequence and QA evidence to the user.
+13. [x] The user approved and the initial 33-slide implementation was published as commit `e158b92`; GitHub Pages run `32776095038` completed successfully. The later in-window review showed that its two-slide Manifold interpretation was too narrow.
+14. [x] **Correction release gate:** user explicitly approved the corrected version for publication on 2026-08-24 (“Push this update and fix manifold pronto”).
+15. [ ] After correction approval only: commit, push to `origin/main`, wait for terminal GitHub Pages success, and verify the corrected live sequence independently of local QA.
 
-## Definition of done before approval
+## Definition of done before correction approval
 
 - [x] Every actionable Doc instruction is implemented from the available source material.
 - [x] Every supplied image used in the deck is correctly mapped, readable, undistorted, and described accessibly.
 - [x] All changed links resolve to their intended current destinations.
-- [x] Desktop and mobile all-slide overflow checks pass with zero offenders.
-- [x] Focused interaction and console checks pass.
+- [x] Desktop and mobile all-slide overflow checks pass with zero offenders after the Manifold expansion.
+- [x] Focused interaction and console checks pass after the Manifold expansion.
 - [x] The local diff and before → after ledger are ready for user review.
-- [x] GitHub remote and live Pages remain unchanged pending explicit approval.
+- [x] The corrected 37-slide version remains local; GitHub Pages still serves the earlier approved `e158b92` version pending explicit correction approval.

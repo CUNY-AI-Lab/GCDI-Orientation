@@ -62,9 +62,9 @@ This checklist translates the updated orientation instructions into implementati
 12. [x] Present the corrected local sequence and QA evidence to the user.
 13. [x] The user approved and the initial 33-slide implementation was published as commit `e158b92`; GitHub Pages run `32776095038` completed successfully. The later in-window review showed that its two-slide Manifold interpretation was too narrow.
 14. [x] **Correction release gate:** user explicitly approved the corrected version for publication on 2026-08-24 (“Push this update and fix manifold pronto”).
-15. [ ] After correction approval only: commit, push to `origin/main`, wait for terminal GitHub Pages success, and verify the corrected live sequence independently of local QA.
+15. [x] Commit and push the correction as `fddc415`; wait for GitHub Pages run `32777521621` to finish successfully; then verify the deployed sequence independently at slides 26–31, including exact “Manifold” labels, 37-slide counters, image loading and aspect-ratio containment, Next-button navigation, image lightbox behavior, and an empty browser console.
 
-## Definition of done before correction approval
+## Definition of done
 
 - [x] Every actionable Doc instruction is implemented from the available source material.
 - [x] Every supplied image used in the deck is correctly mapped, readable, undistorted, and described accessibly.
@@ -72,4 +72,4 @@ This checklist translates the updated orientation instructions into implementati
 - [x] Desktop and mobile all-slide overflow checks pass with zero offenders after the Manifold expansion.
 - [x] Focused interaction and console checks pass after the Manifold expansion.
 - [x] The local diff and before → after ledger are ready for user review.
-- [x] The corrected 37-slide version remains local; GitHub Pages still serves the earlier approved `e158b92` version pending explicit correction approval.
+- [x] The corrected 37-slide version is published from `fddc415` and independently live-verified after successful GitHub Pages run `32777521621`.

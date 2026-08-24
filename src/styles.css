@@ -74,7 +74,7 @@ header .bar { pointer-events: auto; display: flex; align-items: center; gap: 8px
 .header-deck-link::before { content: ''; width: 0.5em; height: 0.5em; border-radius: 999px; background: var(--accent); flex: 0 0 auto; }
 .header-deck-link:hover { color: #fff; background: var(--accent); border-color: var(--accent); }
 .header-deck-link:hover::before { background: #fff; }
-.header-secondary-link { position: absolute; top: calc(50% + 23px); right: 20px; pointer-events: auto; font-family: var(--font-mono); font-size: clamp(11px, 0.9vw, 14px); line-height: 1; color: var(--muted); text-decoration-thickness: 1px; text-underline-offset: 2px; white-space: nowrap; }
+.header-secondary-link { position: absolute; top: calc(50% + 23px); right: 20px; pointer-events: auto; font-family: var(--font-mono); font-size: clamp(12px, 1.1vw, 17px); font-weight: 500; line-height: 1; color: var(--accent-deep); text-decoration-thickness: 1px; text-underline-offset: 2px; white-space: nowrap; }
 .header-secondary-link:hover { color: var(--accent-deep); }
 
 /* ── Footer / slider ── */
@@ -234,6 +234,8 @@ section.slide.slide-title { padding: 0; }
 .walk-stage > .walk-step { grid-area: 1 / 1; width: 100%; height: 100%; object-fit: contain; object-position: center; background: var(--bg-soft); }
 .walk-stage > .walk-step.frag { z-index: 1; }
 .walk-stage > .walk-panel { grid-area: 1 / 1; z-index: 2; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.96); padding: clamp(14px, 2vw, 28px); }
+.sandbox-access-card { grid-area: 1 / 1; align-self: start; justify-self: end; z-index: 3; display: block; margin: clamp(8px, 1vw, 14px); padding: 6px; border: 1px solid var(--stroke); border-radius: 10px; background: rgba(255,255,255,0.96); box-shadow: 0 3px 14px rgba(20,18,16,0.1); }
+.sandbox-access-card img { display: block; width: clamp(72px, 6.5vw, 88px); height: auto; border-radius: 5px; background: #fff; }
 
 .schedule { list-style: none; padding: 0; margin-top: 4px; max-width: none !important; }
 .schedule li { display: grid; grid-template-columns: minmax(7.2em, max-content) minmax(0, 1fr); column-gap: clamp(10px, 1.4vw, 18px); align-items: baseline; font-size: var(--fs-schedule); padding: clamp(9px, 1.5vh, 15px) 16px; border-bottom: 1px solid var(--rule); margin-bottom: 0; }
@@ -299,6 +301,7 @@ section.slide.slide-title { padding: 0; }
   .walk-panel .series-head strong,
   .walk-panel .series-head span { font-size: clamp(10px, 2.6vw, 13px); }
   .walk-panel .schedule li { grid-template-columns: max-content minmax(0, 1fr); column-gap: 8px; padding: 6px 4px; font-size: clamp(10px, 2.6vw, 12px); }
+  .sandbox-access-card img { width: clamp(64px, 16vw, 70px); }
 }
 @media (max-width: 480px) {
   .header-wordmark { display: none; }

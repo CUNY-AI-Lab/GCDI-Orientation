@@ -83,6 +83,8 @@ This checklist translates the updated orientation instructions into implementati
 30. [x] Restore `cdsdv` after `gcdi-fifth-floor` from the earlier presentation source using both tracked 1500×1133 architectural renderings without distortion.
 31. [x] Change the final slide to “Looking Forward” and update the institution line to “The CUNY Graduate Center.”
 32. [x] Verify all 40 slides at `1280×720`, `1071×969`, and `390×844`; update the overview grid/counters/cache keys; push commit `6c99eba`; wait for GitHub Pages run `32803385928` to finish successfully; and verify the live deck's links, navigation, lightbox, 40-tile overview, empty console, image containment, and byte-identical served HTML/CSS/JavaScript.
+33. [x] Supersede the earlier screenshot-only treatment by adding the exact visible title “Tagging the Tower Blog”; retain the supplied screenshot and `cuny.is/ttt` shortlink unchanged.
+34. [ ] After explicit user approval, push the Tagging the Tower Blog title revision, wait for terminal GitHub Pages success, and verify the live slide independently.
 
 ## Definition of done
 
@@ -97,3 +99,4 @@ This checklist translates the updated orientation instructions into implementati
 - [x] Push the approved 38-slide revision and its final Manifold comparison refinement (`29b7860`, then `6ccea63`); wait for terminal GitHub Pages success (runs `32779679309` and `32780175425`); verify live slide 15 (`tagging-tower`), slide 27 (`manifold`), and slide 31 (`manifold-applications`) for exact text, regular-weight card typography, image containment, counters, zero overflow, and a clean browser console.
 - [x] Publish and independently live-verify the final JITP journal image/copy and “Classroom Use and Passion Projects” title revision from `439a57d` after successful Pages run `32781602552`.
 - [x] Publish and independently live-verify the approved 40-slide second-round revision from `6c99eba` after terminal GitHub Pages success in run `32803385928`.
+- [ ] Publish and independently live-verify the “Tagging the Tower Blog” title revision after explicit approval.

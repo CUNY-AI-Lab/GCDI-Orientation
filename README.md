@@ -16,7 +16,7 @@ GCDI aesthetic: white slides, dark grey text, orange accents from the GCDI logo.
 Support for Digital Scholarship (GC Digital Scholarship Lab · CUNY AI Lab · AI
 Guidelines) → Platforms (Commons · Manifold) → Grants (PDIG) → Labs & Spaces → Looking Forward.
 The expanded deck adds a presentation outline, the Data Quilt example, dedicated Commons slides for
-profiles/CVs, courses, groups, and sites, plus a screenshot-only Tagging the Tower
+profiles/CVs, courses, groups, and sites, plus the titled Tagging the Tower Blog
 slide linked to `cuny.is/ttt`, and the Center for Digital Scholarship and Data
 Visualization architectural renderings. The Manifold sequence uses the required content and
 images from source slides 2, 4, 5, 6, and 7 while adopting the orientation deck's

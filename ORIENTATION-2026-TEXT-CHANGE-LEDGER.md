@@ -1,10 +1,10 @@
 # GCDI Orientation 2026 text-change ledger
 
-This ledger compares the synchronized GitHub baseline at commit `d3d844c` with the 40-slide second-round revision published as `6c99eba`. The initial implementation was published as `e158b92`, the six-slide Manifold correction as `fddc415`, the typography/Tagging revision as `29b7860`, the Manifold comparison refinement as `6ccea63`, and the JITP journal/projects revision as `439a57d`. It is the durable before → after record for text, labels, links, and image descriptions changed while implementing the August 24, 2026 Google Doc instructions and later user direction.
+This ledger compares the synchronized GitHub baseline at commit `d3d844c` with the 40-slide second-round revision published as `6c99eba` and the subsequent locally reviewed “Tagging the Tower Blog” title revision. The initial implementation was published as `e158b92`, the six-slide Manifold correction as `fddc415`, the typography/Tagging revision as `29b7860`, the Manifold comparison refinement as `6ccea63`, and the JITP journal/projects revision as `439a57d`. It is the durable before → after record for text, labels, links, and image descriptions changed while implementing the August 24, 2026 Google Doc instructions and later user direction.
 
 ## Slide text and labels
 
-| Stable slide | Before | Published second-round version |
+| Stable slide | Before | Current reviewed version |
 | --- | --- | --- |
 | `toc` | No corresponding slide | “Presentation Outline” with the exact seven sections: Introduction; Coursework; Support for Digital Scholarship; Platforms for Scholarly Communication; Grants for Digital Scholarship; Labs and Spaces; Looking Forward |
 | `intro-goals` | “Establish the GC as a leader in digital scholarship” | “GC Digital Initiatives established in 2012 to provide leadership in digital scholarship” |
@@ -23,6 +23,7 @@ This ledger compares the synchronized GitHub baseline at commit `d3d844c` with t
 | `dsl-hours` | “One-on-one consultations with a Digital Fellow, on your schedule” | “One-on-one consultations with a Digital Fellow at a mutually selected time” |
 | `dsl-hours` | No visible consultation URL | `cuny.is/gcdi-consults` |
 | `tagging-tower` | No corresponding slide | Screenshot-only slide immediately after `dsl-hours`; no added slide copy; visible deck shortlink `cuny.is/ttt` |
+| `tagging-tower` title | Screenshot-only slide with no visible title | “Tagging the Tower Blog”; source screenshot and visible deck shortlink `cuny.is/ttt` retained |
 | `commons-cv` | No corresponding slide | “Academic Profiles & CVs”; “Create a public profile for your academic identity”; “Share research and teaching interests, education, contact links, and a CV”; “Connect your profile to your activity across the Commons” |
 | `commons-courses` | No corresponding slide | “Courses”; “Use Commons course sites to support teaching and learning”; “Bring course materials, links, and class activity into one place”; “Discover featured courses from across CUNY” |
 | `commons-groups` | No corresponding slide | “Groups”; “Join or create a group around a program, center, method, or shared interest”; “Use activity, forums, events, libraries, and membership tools to collaborate” |
@@ -79,7 +80,7 @@ The JITP journal revision also makes one user-directed visible copy change: “L
 - Expanded the deck to 40 slides and increased the mobile overview grid from 13 to 14 rows so every slide remains reachable.
 - Replaced the Manifold-only 42%-zoom heading/caption treatment with shared deck typography and deck-native content/image structures.
 - Enlarged both `manifold-applications` screenshots in two balanced, full-slide project cards; each card keeps the screenshot and its exact “Future Iteration” relationship together while preserving `object-fit: contain` and intrinsic aspect ratio.
-- Updated matching CSS/JavaScript cache keys to `20260824-round2b`.
+- Updated matching CSS/JavaScript cache keys to `20260824-tagging-blog2`.
 
 For the complete implementation comparison, including the current second-round revision, review:
 

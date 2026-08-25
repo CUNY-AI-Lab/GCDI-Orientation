@@ -312,9 +312,11 @@ section.slide.manifold-comparison-slide .manifold-comparison-grid { flex: 1 1 au
 .manifold-project-future { margin: clamp(8px, 1vh, 12px) 0 0; color: var(--fg-strong); font-family: var(--font-body); font-size: clamp(19px, 1.65vw, 27px); line-height: 1.25; font-weight: 400; }
 .manifold-project-future span { color: var(--accent-deep); font: inherit; }
 
-/* Screenshot-only outline item: the deck link pill carries the shortlink. */
-section.slide.tagging-tower-slide { flex-direction: column; }
-section.slide.tagging-tower-slide .stage { flex: 1 1 100%; width: 100%; min-height: 0; background: #fff; }
+/* Blog screenshot: a compact deck-native title keeps the page image primary. */
+section.slide.tagging-tower-slide { flex-direction: column; gap: clamp(8px, 1.2vh, 14px); }
+section.slide.tagging-tower-slide .tagging-tower-heading { flex: 0 0 clamp(48px, 7vh, 64px) !important; width: 100%; max-width: none; min-height: clamp(48px, 7vh, 64px); justify-content: center; padding: 0 clamp(8px, 1.4vw, 20px); border: 0; border-radius: 0; }
+section.slide.tagging-tower-slide .tagging-tower-heading h1 { margin: 0; color: var(--accent); font-size: var(--fs-heading); line-height: 1.08; white-space: nowrap; text-wrap: nowrap; }
+section.slide.tagging-tower-slide .stage { flex: 1 1 auto; width: 100%; min-height: 0; background: #fff; }
 section.slide.tagging-tower-slide .stage img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
 
 /* ── Layout at width ── */

@@ -1,10 +1,10 @@
 # GCDI Orientation 2026 text-change ledger
 
-This ledger compares the synchronized GitHub baseline at commit `d3d844c` with the 40-slide second-round revision. The initial implementation was published as `e158b92`, the six-slide Manifold correction as `fddc415`, the typography/Tagging revision as `29b7860`, the Manifold comparison refinement as `6ccea63`, and the JITP journal/projects revision as `439a57d`. It is the durable before → after record for text, labels, links, and image descriptions changed while implementing the August 24, 2026 Google Doc instructions and later user direction.
+This ledger compares the synchronized GitHub baseline at commit `d3d844c` with the 40-slide second-round revision published as `6c99eba`. The initial implementation was published as `e158b92`, the six-slide Manifold correction as `fddc415`, the typography/Tagging revision as `29b7860`, the Manifold comparison refinement as `6ccea63`, and the JITP journal/projects revision as `439a57d`. It is the durable before → after record for text, labels, links, and image descriptions changed while implementing the August 24, 2026 Google Doc instructions and later user direction.
 
 ## Slide text and labels
 
-| Stable slide | Before | Local review version |
+| Stable slide | Before | Published second-round version |
 | --- | --- | --- |
 | `toc` | No corresponding slide | “Presentation Outline” with the exact seven sections: Introduction; Coursework; Support for Digital Scholarship; Platforms for Scholarly Communication; Grants for Digital Scholarship; Labs and Spaces; Looking Forward |
 | `intro-goals` | “Establish the GC as a leader in digital scholarship” | “GC Digital Initiatives established in 2012 to provide leadership in digital scholarship” |

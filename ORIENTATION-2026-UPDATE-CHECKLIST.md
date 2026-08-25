@@ -9,6 +9,7 @@ This checklist translates the updated orientation instructions into implementati
 - [x] Run a fast-forward-only pull from `origin/main`; local `HEAD` and `origin/main` are both `d3d844c` (`Already up to date`, 2026-08-24).
 - [x] Read the full native Google Doc, not only extracted prose: [GCDI Orientation 2026](https://docs.google.com/document/d/1LbE9tifmJ4hQaI40B-wSfx01n2O7htQ_cnhvshbgcd4/edit).
 - [x] Record the Doc version used for implementation: modified `2026-08-24T19:28:15.682Z`, revision `AIroW34nCZlkz6c28BE42-78hh6aVXjmLyiAUf9CiPf2BoPvNfzbHiZwT7Hxj7lC7IrlmmvSFxEqWtguePO3fP0cx8srhmOD8ID-GhE7PS0`.
+- [x] Re-read Matt's additive second-round update at Drive revision `4158`, modified `2026-08-24T23:55:18.380Z`; confirm revision `3211` is the immediate prior version, the first-round requests remain unchanged, and no embedded image changed.
 - [x] Re-read the updated outline section for Tagging the Tower from revision `AIroW340zNsaHN0Vcqn4hiTMwgmoSkgeBVz92UV1icAyZ5BD1aO8UflNV6mTSG33dDTejtxJ9jFDUWhuF4I89jC-BuJWdEeLq9MqcLxqSf4`; confirm the exact entry `Tagging the Tower || cuny.is/ttt` follows Office Hours.
 - [x] Inventory the Doc's 14 embedded image objects (13 unique images) and map each image to its adjacent instruction.
 - [x] Verify the direct Digital Fellows Linktree destination: `https://linktr.ee/GCDigitalFellows`.
@@ -44,7 +45,7 @@ This checklist translates the updated orientation instructions into implementati
 - [x] Expand the Manifold section in the required order: source slide 2 (`manifold`), source slide 4 (`manifold-reading-groups`), source slide 5 (`manifold-journals`), source slide 6 (`manifold-projects`), source slide 7 (`manifold-applications`), then `manifold-oer`. Retain every required image and relationship while making the user-directed layout concession: use the orientation deck's shared title/body scale and content/image structure rather than rigid PowerPoint mirroring. Match the Commons opener with label “Platforms” and title “Manifold Scholarship”; label the five follow-up slides “Manifold”; keep every screenshot at `object-fit: contain`.
 - [x] `grants` and `grants-samples` (original slides 23–24): replace the broken short link with `https://digitalgrants.commons.gc.cuny.edu/`.
 - [x] `grants`: replace the old site screenshot with the newly supplied PDIG site screenshot and update alt text.
-- [x] `gcdi-fifth-floor` (original slide 27): remove the inaccurate fifth-floor/Data Lab framing and replace it with source-faithful language: DATA Labs have been run on Zoom; Office Hours are hosted in the Digital Scholarship Lab on the seventh floor and on Zoom; dates and times are forthcoming.
+- [x] First-round `gcdi-fifth-floor` revision (original slide 27): remove the inaccurate fifth-floor/Data Lab framing and replace it with source-faithful DATA Labs/Office Hours language. This historical state is superseded by second-round item 29 below.
 - [x] Update README slide count/structure after additions.
 - [x] Update versioned CSS/JS asset URLs after all HTML/CSS/JS changes so GitHub Pages does not serve stale behavior.
 
@@ -72,6 +73,16 @@ This checklist translates the updated orientation instructions into implementati
 20. [x] Replace the `manifold-journals` screenshot with the newly supplied 1962×1956 JITP journals-page image, preserve the prior source asset, update the image-specific accessible description, and change the second bullet exactly to “Look for JITP Issue 30 general call in early fall.”
 21. [x] Change the `manifold-projects` title exactly from “Class & Passion Projects” to “Classroom Use and Passion Projects.”
 22. [x] Verify the journal replacement and projects title locally; push commit `439a57d`; wait for GitHub Pages run `32781602552` to complete successfully; verify live slides 29–30 for exact text, the 1962×1956 contained JITP image, standard title sizing, zero overflow, and a clean browser console.
+23. [x] Remove the `cail-sandbox` request-access secondary header link and access-form QR card while retaining the primary Sandbox link and separate model-registry link.
+24. [x] Verify the simplified Sandbox slide locally at `1280×720`, `1071×969`, and `390×844`; the user approved the combined release on 2026-08-24 (“Implement and push”).
+25. [x] Leave the existing mix of section-title slides unchanged this round, as explicitly directed.
+26. [x] Insert `toc` after `presenters` with the exact seven-part presentation outline from revision `4158`.
+27. [x] Change the upper labels on `degrees`, `courses`, and `data-quilt` from “Degree Programs & Certificates” to “Coursework.”
+28. [x] Remove only the top-right `dsl-workshops` “Digital Fellows Linktree” contextual link; retain the in-slide Linktree QR and visible URL.
+29. [x] Rebuild `gcdi-fifth-floor` as “GC Digital Scholarship Lab,” match the preceding NML two-column visual structure, remove the DATA Labs copy, and use Matt's four exact bullets.
+30. [x] Restore `cdsdv` after `gcdi-fifth-floor` from the earlier presentation source using both tracked 1500×1133 architectural renderings without distortion.
+31. [x] Change the final slide to “Looking Forward” and update the institution line to “The CUNY Graduate Center.”
+32. [ ] Verify all 40 slides at desktop and mobile viewports, update the overview grid/counters/cache keys, commit and push the approved revision, wait for Pages success, and verify the live deck.
 
 ## Definition of done
 
@@ -85,3 +96,4 @@ This checklist translates the updated orientation instructions into implementati
 - [x] The new 38-slide typography and Tagging the Tower revision received explicit publication approval.
 - [x] Push the approved 38-slide revision and its final Manifold comparison refinement (`29b7860`, then `6ccea63`); wait for terminal GitHub Pages success (runs `32779679309` and `32780175425`); verify live slide 15 (`tagging-tower`), slide 27 (`manifold`), and slide 31 (`manifold-applications`) for exact text, regular-weight card typography, image containment, counters, zero overflow, and a clean browser console.
 - [x] Publish and independently live-verify the final JITP journal image/copy and “Classroom Use and Passion Projects” title revision from `439a57d` after successful Pages run `32781602552`.
+- [ ] Publish and independently live-verify the approved 40-slide second-round revision after terminal GitHub Pages success.

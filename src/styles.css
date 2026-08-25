@@ -194,6 +194,13 @@ section.slide.slide-title { padding: 0; }
 .presenter-row:nth-child(7) { transform: translateX(-1%); }
 .presenter-row:nth-child(8) { transform: translateX(1.75%); }
 
+/* ── Presentation outline ── */
+.toc-slide .content { align-items: center; padding-block: clamp(20px, 3vh, 36px); }
+.toc-slide .content > * { width: min(100%, 1120px); }
+.toc-slide .content h1 { margin-bottom: clamp(12px, 2vh, 22px); }
+.toc-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(8px, 1.3vh, 14px) clamp(24px, 4vw, 60px); width: 100%; padding: 0; margin: 0; list-style: none; }
+.toc-list li { margin: 0; padding: clamp(8px, 1.2vh, 13px) clamp(12px, 1.3vw, 18px); border-left: 3px solid rgba(var(--accent-rgb), 0.72); border-radius: 4px 10px 10px 4px; background: linear-gradient(90deg, rgba(var(--accent-rgb), 0.07), rgba(var(--accent-rgb), 0)); color: var(--fg-strong); font-size: var(--fs-body-compact); line-height: 1.25; }
+
 @media (min-width: 960px) {
   .presenter-row strong,
   .presenter-row span { white-space: nowrap; }
@@ -240,9 +247,6 @@ section.slide.slide-title { padding: 0; }
 .walk-stage > .frag { transform: none; }
 .walk-stage > .walk-step.frag { z-index: 1; }
 .walk-stage > .walk-panel { position: absolute; inset: 0; z-index: 2; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.96); padding: clamp(14px, 2vw, 28px); }
-.sandbox-access-card { position: absolute; top: 0; right: 0; z-index: 3; display: block; margin: clamp(8px, 1vw, 14px); padding: 6px; border: 1px solid var(--stroke); border-radius: 10px; background: rgba(255,255,255,0.96); box-shadow: 0 3px 14px rgba(20,18,16,0.1); }
-.sandbox-access-card img { display: block; width: clamp(72px, 6.5vw, 88px); height: auto; border-radius: 5px; background: #fff; }
-
 .schedule { list-style: none; padding: 0; margin-top: 4px; max-width: none !important; }
 .schedule li { display: grid; grid-template-columns: minmax(7.2em, max-content) minmax(0, 1fr); column-gap: clamp(10px, 1.4vw, 18px); align-items: baseline; font-size: var(--fs-schedule); padding: clamp(9px, 1.5vh, 15px) 16px; border-bottom: 1px solid var(--rule); margin-bottom: 0; }
 .schedule li:last-child { border-bottom: none; }
@@ -280,6 +284,12 @@ section.slide.slide-title { padding: 0; }
 /* Two-image stack (grants sample projects, office hours) */
 .pair-stage { display: flex; gap: clamp(10px, 1.4vw, 18px); align-items: stretch; justify-content: center; padding: clamp(10px, 1.4vw, 20px); }
 .pair-stage img { flex: 1 1 0; min-width: 0; object-fit: contain; border-radius: 8px; max-height: 100%; }
+
+/* Labs & Spaces closing sequence. */
+.gcdi-space-slide .content h1,
+.cdsdv-slide .content h1 { font-size: var(--fs-heading); }
+.gcdi-space-slide .content li,
+.cdsdv-slide .content li { font-size: var(--fs-body-compact); }
 
 /* Manifold sequence: use the deck's standard type scale and content/image
    split. Screenshots support the message; HTML carries the readable copy. */
@@ -338,6 +348,10 @@ section.slide.tagging-tower-slide .stage img { width: 100%; height: 100%; object
   .presenter-row { grid-template-columns: 1fr; gap: 2px; }
   .presenter-row:nth-child(odd) { transform: translateX(-1.5%); }
   .presenter-row:nth-child(even) { transform: translateX(1.5%); }
+  .toc-list { grid-template-columns: minmax(0, 1fr); gap: clamp(4px, 0.8vh, 8px); }
+  .toc-list li { padding-block: clamp(5px, 0.8vh, 8px); font-size: clamp(16px, 4.4vw, 20px); }
+  .cdsdv-slide .pair-stage { flex-direction: column; }
+  .cdsdv-slide .pair-stage img { width: 100%; height: calc(50% - 5px); flex: 1 1 0; }
   .df-workshop-schedule li { grid-template-columns: 1fr; gap: 3px; }
   .df-workshop-schedule li > strong,
   .df-workshop-schedule li > span { white-space: normal; }
@@ -347,7 +361,6 @@ section.slide.tagging-tower-slide .stage img { width: 100%; height: 100%; object
   .walk-panel .series-head strong,
   .walk-panel .series-head span { font-size: clamp(10px, 2.6vw, 13px); }
   .walk-panel .schedule li { grid-template-columns: max-content minmax(0, 1fr); column-gap: 8px; padding: 6px 4px; font-size: clamp(10px, 2.6vw, 12px); }
-  .sandbox-access-card img { width: clamp(64px, 16vw, 70px); }
 }
 @media (max-width: 480px) {
   .header-wordmark { display: none; }
@@ -381,6 +394,7 @@ body.overview section.slide .content .series-head,
 body.overview section.slide .content .qr-row,
 body.overview section.slide .content .link-line,
 body.overview section.slide .content .presenter-list,
+body.overview section.slide .content .toc-list,
 body.overview section.slide .panelists,
 body.overview section.slide .institution,
 body.overview section.slide .eyebrow,
@@ -401,7 +415,7 @@ body.overview .cail-lede strong { display: block; }
   body.overview main { grid-template-columns: repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(8, minmax(0, 1fr)); }
 }
 @media (max-width: 719.98px) {
-  body.overview main { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(13, minmax(0, 1fr)); gap: 5px; padding: 5px; }
+  body.overview main { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(14, minmax(0, 1fr)); gap: 5px; padding: 5px; }
   body.overview section.slide { padding: 6px; border-radius: 6px; }
   body.overview section.slide .content h1,
   body.overview section.slide.slide-title .title-card h1 { font-size: 10px; line-height: 1.15; }

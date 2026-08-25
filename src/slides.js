@@ -306,7 +306,9 @@ slides.forEach(function(s, i) {
   var title = s.querySelector('.content h1');
   if (s.classList.contains('placeholder-slide') && title) {
     var len = (title.textContent || '').trim().length;
-    if (len > 52) s.classList.add('crowded');
+    /* CDSDV intentionally pairs a long formal title with two source
+       renderings; keep its figure-side layout instead of hiding the stage. */
+    if (len > 52 && !s.classList.contains('cdsdv-slide')) s.classList.add('crowded');
     // Dense detection: 5+ bullets, OR any bullet body >80 chars, OR total bullet chars >260
     var bullets = s.querySelectorAll('.content > ul > li, .content > ul > li > ul > li');
     var totalChars = 0;

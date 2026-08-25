@@ -1,6 +1,6 @@
 # GCDI Orientation 2026 text-change ledger
 
-This ledger compares the synchronized GitHub baseline at commit `d3d844c` with the 40-slide second-round revision published as `6c99eba` and the subsequent locally reviewed “Tagging the Tower Blog” title revision. The initial implementation was published as `e158b92`, the six-slide Manifold correction as `fddc415`, the typography/Tagging revision as `29b7860`, the Manifold comparison refinement as `6ccea63`, and the JITP journal/projects revision as `439a57d`. It is the durable before → after record for text, labels, links, and image descriptions changed while implementing the August 24, 2026 Google Doc instructions and later user direction.
+This ledger compares the synchronized GitHub baseline at commit `d3d844c` with the 40-slide second-round revision published as `6c99eba` and the subsequent “Tagging the Tower Blog” title revision published as `65e0849`. The initial implementation was published as `e158b92`, the six-slide Manifold correction as `fddc415`, the typography/Tagging revision as `29b7860`, the Manifold comparison refinement as `6ccea63`, and the JITP journal/projects revision as `439a57d`. It is the durable before → after record for text, labels, links, and image descriptions changed while implementing the August 24, 2026 Google Doc instructions and later user direction.
 
 ## Slide text and labels
 

@@ -85,6 +85,9 @@ This checklist translates the updated orientation instructions into implementati
 32. [x] Verify all 40 slides at `1280×720`, `1071×969`, and `390×844`; update the overview grid/counters/cache keys; push commit `6c99eba`; wait for GitHub Pages run `32803385928` to finish successfully; and verify the live deck's links, navigation, lightbox, 40-tile overview, empty console, image containment, and byte-identical served HTML/CSS/JavaScript.
 33. [x] Supersede the earlier screenshot-only treatment by adding the exact visible title “Tagging the Tower Blog”; retain the supplied screenshot and `cuny.is/ttt` shortlink unchanged.
 34. [x] After explicit user approval, push the Tagging the Tower Blog title revision as `65e0849`; wait for GitHub Pages run `32804642728` to finish successfully; and independently verify the exact title, `16 / 40` counter, `cuny.is/ttt` link, source image dimensions and containment, versioned assets, navigation, responsive layouts, overview, and empty browser console on the live deck.
+35. [x] Apply the August 25 follow-up locally: change “Advanced Certificate — anticipated 2027” to “Advanced Certificates — anticipated 2027,” and recompose `toc` so wide viewports place the title on the left and one vertical I–VII outline on the right while narrow viewports preserve that order in a stacked layout.
+36. [x] Verify the follow-up at `1280×720`, `1071×969`, and `390×844`; confirm the TOC uses one ordered list with seven correctly ordered items, wide layouts remain side by side, mobile stacks cleanly, every TOC item and the corrected certificate line remain contained, all 40 slides have zero overflow or missing-image offenders, and the browser console is empty.
+37. [ ] After explicit user approval, push and independently live-verify the August 25 Certificates/TOC follow-up.
 
 ## Definition of done
 
@@ -100,3 +103,5 @@ This checklist translates the updated orientation instructions into implementati
 - [x] Publish and independently live-verify the final JITP journal image/copy and “Classroom Use and Passion Projects” title revision from `439a57d` after successful Pages run `32781602552`.
 - [x] Publish and independently live-verify the approved 40-slide second-round revision from `6c99eba` after terminal GitHub Pages success in run `32803385928`.
 - [x] Publish and independently live-verify the “Tagging the Tower Blog” title revision from `65e0849` after explicit approval and terminal GitHub Pages success in run `32804642728`.
+- [x] Implement and locally verify the August 25 Certificates/TOC follow-up without publishing it prematurely.
+- [ ] Publish and independently live-verify the August 25 Certificates/TOC follow-up after explicit approval.

@@ -1,15 +1,17 @@
 # GCDI Orientation 2026 text-change ledger
 
-This ledger compares the synchronized GitHub baseline at commit `d3d844c` with the 40-slide second-round revision published as `6c99eba` and the subsequent “Tagging the Tower Blog” title revision published as `65e0849`. The initial implementation was published as `e158b92`, the six-slide Manifold correction as `fddc415`, the typography/Tagging revision as `29b7860`, the Manifold comparison refinement as `6ccea63`, and the JITP journal/projects revision as `439a57d`. It is the durable before → after record for text, labels, links, and image descriptions changed while implementing the August 24, 2026 Google Doc instructions and later user direction.
+This ledger compares the synchronized GitHub baseline at commit `d3d844c` with the 40-slide second-round revision published as `6c99eba`, the subsequent “Tagging the Tower Blog” title revision published as `65e0849`, and the locally reviewed August 25 Certificates/TOC follow-up. The initial implementation was published as `e158b92`, the six-slide Manifold correction as `fddc415`, the typography/Tagging revision as `29b7860`, the Manifold comparison refinement as `6ccea63`, and the JITP journal/projects revision as `439a57d`. It is the durable before → after record for text, labels, links, and image descriptions changed while implementing the August 24, 2026 Google Doc instructions and later user direction.
 
 ## Slide text and labels
 
 | Stable slide | Before | Current reviewed version |
 | --- | --- | --- |
 | `toc` | No corresponding slide | “Presentation Outline” with the exact seven sections: Introduction; Coursework; Support for Digital Scholarship; Platforms for Scholarly Communication; Grants for Digital Scholarship; Labs and Spaces; Looking Forward |
+| `toc` wide layout | Two-column outline grid; reading down the first column produced I, III, V, VII before returning to II, IV, VI | Title on the left; one vertical I–VII outline on the right. Narrow viewports stack the title above the same ordered list |
 | `intro-goals` | “Establish the GC as a leader in digital scholarship” | “GC Digital Initiatives established in 2012 to provide leadership in digital scholarship” |
 | `degrees` | “Linguistics” | “Computational Linguistics” |
-| `degrees` | No corresponding list item | “Digital Humanities and Data Analysis and Visualization (Advanced Certificate — anticipated 2027)” |
+| `degrees` | No corresponding list item | “Digital Humanities and Data Analysis and Visualization (Advanced Certificates — anticipated 2027)” |
+| `degrees` August 25 follow-up | “Advanced Certificate — anticipated 2027” | “Advanced Certificates — anticipated 2027” |
 | `courses` | “Data Analysis & Data Science” | “Data Analysis & Visualization” |
 | `data-quilt` | No corresponding slide | Label: “Coursework”; title: “Speaking Truth to Power Via a Data Quilt” |
 | `degrees`, `courses`, `data-quilt` labels | “Degree Programs & Certificates” | “Coursework” |
@@ -80,7 +82,8 @@ The JITP journal revision also makes one user-directed visible copy change: “L
 - Expanded the deck to 40 slides and increased the mobile overview grid from 13 to 14 rows so every slide remains reachable.
 - Replaced the Manifold-only 42%-zoom heading/caption treatment with shared deck typography and deck-native content/image structures.
 - Enlarged both `manifold-applications` screenshots in two balanced, full-slide project cards; each card keeps the screenshot and its exact “Future Iteration” relationship together while preserving `object-fit: contain` and intrinsic aspect ratio.
-- Updated matching CSS/JavaScript cache keys to `20260824-tagging-blog2`.
+- Recomposed the TOC at wide viewports as a two-part title/list layout while preserving a single semantic ordered list and the stacked narrow layout.
+- Updated matching CSS/JavaScript cache keys to `20260825-toc-certificates`.
 
 For the complete implementation comparison, including the current second-round revision, review:
 
